@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>データのそばに、AIを。――アイと先輩の保守支援システム設計</title><style>body{margin:0;background:#f4f4f2;color:#202020;font:16px/1.85 Meiryo,"Noto Sans CJK JP",sans-serif}main,nav{box-sizing:border-box;max-width:800px;margin:auto;padding:20px 12px;background:white}nav{padding-bottom:0}nav ol{padding-left:1.5em}a{color:#176640;overflow-wrap:anywhere}h1{font-size:1.7rem;line-height:1.5}h2{font-size:1.45rem;line-height:1.6;border-top:3px solid #333;margin-top:3rem;padding-top:1rem;scroll-margin-top:1rem}h3,h4{line-height:1.6}p,li{overflow-wrap:anywhere}figure{margin:20px 0}figure img{display:block;width:100%;height:auto}details{margin:1.5rem 0;border:1px solid #bbb;border-radius:6px;padding:12px}summary{cursor:pointer;font-weight:bold}details p{margin:.8rem 0}@media(max-width:500px){main,nav{padding-left:8px;padding-right:8px}h1{font-size:1.4rem}h2{font-size:1.2rem}details{padding:8px}}</style></head><body><nav aria-label="公開ファイル"><a href="https://kutsushitaneko.github.io/in-database-ai-manga/downloads/manga-v13.pdf">PDFを読む</a></nav><nav aria-label="章の目次"><details><summary>目次</summary><ol><li><a href="#chapter-1">はじめに</a></li><li><a href="#chapter-2">1. 文書の意味検索と業務データの照会を組み合わせる</a></li><li><a href="#chapter-3">2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る</a></li><li><a href="#chapter-4">3. チケットの顧客と機種を絞ってベクトル検索する</a></li><li><a href="#chapter-5">4. 検索した文書を根拠にRAG（検索拡張生成）で回答する</a></li><li><a href="#chapter-6">5. NL2SQL で契約情報を照会する</a></li><li><a href="#chapter-7">6. 文書検索と契約照会をAgentのツールにする</a></li></ol></details></nav><main><h1>データのそばに、AIを。――アイと先輩の保守支援システム設計</h1>
-<p>女性エンジニアの青山アイが、保守サポート窓口を支えるシステムの設計を担当します。同じ開発チームの先輩・神宮寺と、問い合わせに必要な情報を整理し、文書検索と契約照会をつなぐ基本設計を進める物語です。</p>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>データのそばに、AIを。――アイと先輩の保守支援システム設計</title><style>body{margin:0;background:#f4f4f2;color:#202020;font:16px/1.85 Meiryo,"Noto Sans CJK JP",sans-serif}main,nav{box-sizing:border-box;max-width:800px;margin:auto;padding:20px 12px;background:white}nav{padding-bottom:0}nav ol{padding-left:1.5em}a{color:#176640;overflow-wrap:anywhere}h1{font-size:1.7rem;line-height:1.5}h2{font-size:1.45rem;line-height:1.6;border-top:3px solid #333;margin-top:3rem;padding-top:1rem;scroll-margin-top:1rem}h3,h4{line-height:1.6}p,li{overflow-wrap:anywhere}figure{margin:20px 0}figure img{display:block;width:100%;height:auto}details{margin:1.5rem 0;border:1px solid #bbb;border-radius:6px;padding:12px}summary{cursor:pointer;font-weight:bold}details p{margin:.8rem 0}@media(max-width:500px){main,nav{padding-left:8px;padding-right:8px}h1{font-size:1.4rem}h2{font-size:1.2rem}details{padding:8px}}</style></head><body><nav aria-label="公開ファイル"><a href="https://kutsushitaneko.github.io/in-database-ai-manga/downloads/manga-v14.pdf">PDFを読む</a></nav><nav aria-label="章の目次"><details><summary>目次</summary><ol><li><a href="#chapter-1">はじめに</a></li><li><a href="#chapter-2">1. 文書の意味検索と業務データの照会を組み合わせる</a></li><li><a href="#chapter-3">2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る</a></li><li><a href="#chapter-4">3. チケットの顧客と機種を絞ってベクトル検索する</a></li><li><a href="#chapter-5">4. 検索した文書を根拠にRAG（検索拡張生成）で回答する</a></li><li><a href="#chapter-6">5. NL2SQL で契約情報を照会する</a></li><li><a href="#chapter-7">6. 文書検索と契約照会をAgentのツールにする</a></li></ol></details></nav><main><h1>データのそばに、AIを。――アイと先輩の保守支援システム設計</h1>
+<p>女性エンジニアの青山アイが、保守サポート窓口を支えるシステムの設計を担当します。同じ開発チームの先輩・神宮寺と、問い合わせに必要な情報を整理し、文書検索、契約照会、Agentの試作を通じて、要件に合うシステムを設計する自信を得る物語です。</p>
 <p>原作：<a href="https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960">荒川裕二の技術記事（Qiita）</a> · <a href="https://github.com/kutsushitaneko/orajam41-in-database-ai-demo">デモの公開リポジトリ</a></p>
 <p>登場人物・会話・設計依頼は漫画用の創作です。企業・機種・保守手順は原記事の架空デモに基づきます。作画には生成AIを使用しています。</p>
 <h2 id="chapter-1">はじめに</h2>
 <p>はじめに ― 荒川裕二の技術記事から</p>
 <p>誰の、どんな仕事を支えるのか</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-01-1.png" alt="はじめに — アイが設計を任され、神宮寺が先輩として伴走することを示す（01-1）" width="1024" height="1002" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-01-2.png" alt="はじめに — アイが設計を任され、神宮寺が先輩として伴走することを示す（01-2）" width="1024" height="947" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-02-1.png" alt="はじめに — 想定問い合わせと設計範囲を具体化する（02-1）" width="1024" height="1059" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-02-2.png" alt="はじめに — 想定問い合わせと設計範囲を具体化する（02-2）" width="1024" height="885" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-02-3.png" alt="はじめに — 想定問い合わせと設計範囲を具体化する（02-3）" width="1024" height="1995" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-01-1.png" alt="はじめに — 誰の、どんな仕事を支えるのか（01-1）" width="1024" height="1002" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-01-2.png" alt="はじめに — 誰の、どんな仕事を支えるのか（01-2）" width="1024" height="947" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-02-1.png" alt="はじめに — 誰の、どんな仕事を支えるのか（02-1）" width="1024" height="1059" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-02-2.png" alt="はじめに — 誰の、どんな仕事を支えるのか（02-2）" width="1024" height="885" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-02-3.png" alt="はじめに — 誰の、どんな仕事を支えるのか（02-3）" width="1024" height="1995" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
 <p><strong>01-1</strong></p>
@@ -20,42 +20,42 @@
 <p><strong>アイ：</strong> SQLは経験があります。でも、AIには何を任せれば…。</p>
 <p><strong>神宮寺：</strong> まず、窓口で答えたい問い合わせから考えよう。</p>
 <p><strong>02-1</strong></p>
-<p><strong>解説：</strong> 想定する問い合わせ</p>
+<p><strong>想定する問い合わせ</strong></p>
 <p><strong>解説：</strong> DEV001のサーバーで管理画面が開きません。確認手順を知りたいです。</p>
 <p><strong>解説：</strong> 現地保守も頼めますか？</p>
 <p><strong>02-2</strong></p>
 <p><strong>アイ：</strong> 手順の根拠と、訪問できる条件を確認したいんですね。</p>
 <p><strong>神宮寺：</strong> 社内の最新手順と、この機器の契約が必要だね。</p>
 <p><strong>02-3</strong></p>
-<p><strong>解説：</strong> 確認手順＋契約照会→対応案</p>
+<p><strong>問い合わせへの対応案</strong></p>
 <p><strong>アイ：</strong> 訪問の自動予約は今回のスコープ外です。次の機能拡張で対応予定です。</p>
 </details>
 <h2 id="chapter-2">1. 文書の意味検索と業務データの照会を組み合わせる</h2>
 <p>二種類の問いから、データ基盤を選ぶ</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-03-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 一つの問い合わせを異なるデータに向く二つの問いへ分ける（03-1）" width="1024" height="791" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-03-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 一つの問い合わせを異なるデータに向く二つの問いへ分ける（03-2）" width="1024" height="1051" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-03-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 一つの問い合わせを異なるデータに向く二つの問いへ分ける（03-3）" width="1024" height="499" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-04-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 意味検索と契約条件の判定を混同しない（04-1）" width="1024" height="1012" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-04-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 意味検索と契約条件の判定を混同しない（04-2）" width="1024" height="888" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-04-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 意味検索と契約条件の判定を混同しない（04-3）" width="1024" height="1133" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-05-0.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 分離DBの利点と同期コストを比較する：課題と具体例（05-0）" width="1024" height="619" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-05-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 分離DBの利点と同期コストを比較する：課題と具体例（05-1）" width="1024" height="829" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-05-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 分離DBの利点と同期コストを比較する：課題と具体例（05-2）" width="1024" height="904" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-05-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 分離DBの利点と同期コストを比較する：仕組みと判断（05-3）" width="1024" height="647" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-05-4.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 分離DBの利点と同期コストを比較する：仕組みと判断（05-4）" width="1024" height="1135" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-06-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 鉄道を想定した複数データ検索の例から統合基盤の使い方を理解する（06-1）" width="1024" height="723" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-06-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 鉄道を想定した複数データ検索の例から統合基盤の使い方を理解する（06-2）" width="1024" height="1205" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-06-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 鉄道を想定した複数データ検索の例から統合基盤の使い方を理解する（06-3）" width="1024" height="620" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-07-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — アイが今回のデータ基盤を選び、残る設計責任を理解する（07-1）" width="1024" height="874" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-07-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — アイが今回のデータ基盤を選び、残る設計責任を理解する（07-2）" width="1024" height="954" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-03-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（03-1）" width="1024" height="791" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-03-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（03-2）" width="1024" height="1003" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-03-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（03-3）" width="1024" height="660" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-04-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（04-1）" width="1024" height="1012" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-04-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（04-2）" width="1024" height="888" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-04-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（04-3）" width="1024" height="1059" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-05-0.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（05-0）" width="1024" height="619" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-05-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（05-1）" width="1024" height="829" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-05-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（05-2）" width="1024" height="1104" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-05-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（05-3）" width="1024" height="706" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-05-4.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（05-4）" width="1024" height="1063" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-06-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（06-1）" width="1024" height="911" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-06-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（06-2）" width="1024" height="1033" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-06-3.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（06-3）" width="1024" height="832" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-07-1.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（07-1）" width="1024" height="1251" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-07-2.png" alt="1. 文書の意味検索と業務データの照会を組み合わせる — 二種類の問いから、データ基盤を選ぶ（07-2）" width="1024" height="954" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
 <p><strong>03-1</strong></p>
 <p><strong>神宮寺：</strong> 手順を探す問いと、契約の条件を確かめる問いだね。</p>
 <p><strong>アイ：</strong> 手順は文章。契約は顧客や機器ごとの表ですね。</p>
 <p><strong>03-2</strong></p>
-<p><strong>解説：</strong> 手順書：非構造化データ</p>
-<p><strong>解説：</strong> 契約表：構造化データ</p>
+<p>手順書：非構造化データ</p>
+<p>契約表：構造化データ</p>
 <p><strong>神宮寺：</strong> 文書は意味の近さで探す。契約は表の値を条件と照合する。</p>
 <p><strong>03-3</strong></p>
 <p><strong>アイ：</strong> ベクトル検索とリレーショナル表の検索を、組み合わせるんですね。</p>
@@ -66,126 +66,142 @@
 <p><strong>神宮寺：</strong> でも、契約の判定が毎回揺らいだら困るよね。</p>
 <p><strong>アイ：</strong> 同じ条件なら、いつも同じ結果にしたいです。</p>
 <p><strong>04-3</strong></p>
-<p><strong>神宮寺：</strong> 状態・期間・サービス範囲を、論理式で判定しよう。</p>
-<p><strong>アイ：</strong> AIに可否を推論させず、判定した結果を渡すんですね。</p>
+<p><strong>神宮寺：</strong> 状態・期間・サービス範囲を、いつも同じ基準で確かめたい。</p>
+<p><strong>アイ：</strong> 判定方法も、後でしっかり設計します。</p>
 <p><strong>05-0</strong></p>
 <p><strong>アイ：</strong> 文書データと契約データは、どこで管理したらいいのかな？</p>
 <p><strong>05-1</strong></p>
 <p><strong>アイ：</strong> 文書はベクトルDB、契約は業務DBに置く方法は？</p>
 <p><strong>神宮寺：</strong> 検索を独立して拡張できる。ただ、変更や閲覧範囲の同期が要る。</p>
 <p><strong>05-2</strong></p>
-<p><strong>解説：</strong> 業務DB：取消済み→複製：未反映</p>
+<p><strong>複製の更新が遅れると</strong></p>
+<p>業務DB：取消済み</p>
+<p>検索用の複製：未反映</p>
 <p><strong>アイ：</strong> 解約や公開取消が伝わらなければ、案内を間違えますね。</p>
 <p><strong>05-3</strong></p>
 <p><strong>神宮寺：</strong> Oracle AI Databaseなら、業務表とベクトルを同じDBで扱える。</p>
 <p><strong>05-4</strong></p>
-<p><strong>解説：</strong> JOIN・EXISTSで元の表を参照</p>
-<p><strong>アイ：</strong> 検索用タグへ複製しなくても、業務表の条件を使えるんですね。</p>
+<p><strong>アイ：</strong> JOINやEXISTSを使えば、検索用タグへ複製しなくても、業務表の条件を使えるんですね。</p>
 <p><strong>06-1</strong></p>
-<p><strong>解説：</strong> 鉄道会社を想定した分析例</p>
+<p><strong>鉄道会社を想定した分析例</strong></p>
 <p><strong>神宮寺：</strong> 表と文書に、位置情報も加えられる。鉄道会社を例に見てみよう。</p>
 <p><strong>06-2</strong></p>
-<p><strong>解説：</strong> ①車両タイプ・期間・新潟県への進入</p>
-<p><strong>解説：</strong> ②報告に「ブレーキ」または「制動機」</p>
-<p><strong>解説：</strong> ③凍結トラブルに意味が近い記述</p>
-<p><strong>神宮寺：</strong> 表や位置、本文の条件と、意味の検索を組み合わせる。</p>
+<p>車両タイプと期間</p>
+<p>新潟県への進入</p>
+<p>報告の本文と意味</p>
+<p><strong>神宮寺：</strong> 報告は「ブレーキ」か「制動機」を含むものに絞り、凍結トラブルに意味が近い記述を探す。</p>
 <p><strong>06-3</strong></p>
 <p><strong>アイ：</strong> 表・地理空間・全文検索・ベクトル検索を、SQLで組み合わせるんですね。</p>
 <p><strong>07-1</strong></p>
-<p><strong>アイ：</strong> 閲覧範囲と契約変更を業務表に結び付けたい。Oracle AI Databaseを選びます。</p>
+<p><strong>アイ：</strong> 閲覧制限や現地対応判断には最新の契約情報を使いたいですね。</p>
+<p><strong>アイ：</strong> 今回はOracle AI Databaseを選びます。</p>
 <p><strong>07-2</strong></p>
 <p><strong>神宮寺：</strong> 本文を変えたらベクトルも更新する。権限の設計も必要だよ。</p>
 <p><strong>アイ：</strong> 整合性は私たちの仕事。次はベクトルの作り方ですね。</p>
 </details>
 <h2 id="chapter-3">2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る</h2>
 <p>埋め込みをどこで実行するか決める</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-08-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みモデルの役割を理解し、配置の検討へ進む（08-1）" width="1024" height="1023" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-08-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みモデルの役割を理解し、配置の検討へ進む（08-2）" width="1024" height="864" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-08-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みモデルの役割を理解し、配置の検討へ進む（08-3）" width="1024" height="577" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-09-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 外部APIとDB内実行をデータ移動と運用負荷で比較する（09-1）" width="1024" height="959" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-09-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 外部APIとDB内実行をデータ移動と運用負荷で比較する（09-2）" width="1024" height="669" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-09-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 外部APIとDB内実行をデータ移動と運用負荷で比較する（09-3）" width="1024" height="635" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-10-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 外部生成LLMとの境界を確認して取り込み方針を選ぶ（10-1）" width="1024" height="957" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-10-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 外部生成LLMとの境界を確認して取り込み方針を選ぶ（10-2）" width="1024" height="920" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-10-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 外部生成LLMとの境界を確認して取り込み方針を選ぶ（10-3）" width="1024" height="663" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-11-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 取り込みと利用の準備を設計し、検索対象の問題へ進む（11-3）" width="1024" height="790" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-11-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 取り込みと利用の準備を設計し、検索対象の問題へ進む（11-1）" width="1024" height="1173" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-11-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 取り込みと利用の準備を設計し、検索対象の問題へ進む（11-2）" width="1024" height="1156" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-08-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（08-1）" width="1024" height="1023" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-08-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（08-2）" width="1024" height="1064" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-08-4.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（08-4）" width="1024" height="678" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-08-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（08-3）" width="1024" height="715" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-09-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（09-1）" width="1024" height="983" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-09-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（09-2）" width="1024" height="973" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-09-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（09-3）" width="1024" height="940" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-10-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（10-1）" width="1024" height="1617" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-10-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（10-2）" width="1024" height="920" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-11-3.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（11-3）" width="1024" height="1070" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-11-1.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（11-1）" width="1024" height="1373" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-11-2.png" alt="2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る — 埋め込みをどこで実行するか決める（11-2）" width="1024" height="940" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
 <p><strong>08-1</strong></p>
 <p><strong>アイ：</strong> 文書をベクトルにするには、何を使うんですか？</p>
 <p><strong>神宮寺：</strong> 埋め込みモデルだよ。文書と質問を同じモデルで変換する。</p>
 <p><strong>08-2</strong></p>
-<p><strong>解説：</strong> 文書・質問→同じモデル→ベクトルの距離で比較</p>
-<p><strong>アイ：</strong> 原文も保存します。長文はモデルの上限内で、注意事項を切らずに分けます。</p>
+<p><strong>埋め込みモデルとベクトル検索</strong></p>
+<p>文書と質問</p>
+<p>埋め込みモデル</p>
+<p>文書と質問のベクトル</p>
+<p><strong>アイ：</strong> 質問文のベクトルに距離が近いベクトルを持つ文書を見つけるのがベクトル検索ですね</p>
+<p><strong>08-4</strong></p>
+<p><strong>アイ：</strong> 埋め込みモデルはクラウドのAPIを使うんですか？</p>
 <p><strong>08-3</strong></p>
-<p><strong>神宮寺：</strong> 置き場所は二案。外部APIを使うか、対応モデルをDB内へ取り込むか。</p>
+<p><strong>神宮寺：</strong> 外部APIを使うことも、DB内に埋め込みモデルをインポートすることもできる。</p>
 <p><strong>09-1</strong></p>
-<p><strong>解説：</strong> 外部APIへ：初回は検索対象の全チャンク／更新は変更分／質問時は質問</p>
-<p><strong>神宮寺：</strong> 外部APIなら推論基盤の運用を任せられる。ただ、文書や質問を外へ送る。</p>
+<p>DB内：検索対象の文書</p>
+<p>外部API：検索対象の文書</p>
+<p><strong>神宮寺：</strong> 文書のDB登録時には全文書を埋め込みモデルへ送る必要がある。</p>
 <p><strong>09-2</strong></p>
 <p><strong>アイ：</strong> 今回は、検索準備で社内文書の全量を外へ送りたくない。DB内が合いそうです。</p>
 <p><strong>09-3</strong></p>
-<p><strong>神宮寺：</strong> モデル管理とDB資源は必要だ。速さは負荷や同時実行数も含めて検証しよう。</p>
+<p><strong>神宮寺：</strong> ベクトル変換の速度やＤＢ負荷や同時実行数はしっかり検証しよう。</p>
 <p><strong>10-1</strong></p>
-<p><strong>解説：</strong> DB内：埋め込み／DB外：生成LLM</p>
-<p><strong>神宮寺：</strong> 回答を作るLLMは別。今回は外部LLMへ質問と文書抜粋を渡す。</p>
+<p><strong>埋め込みモデルはＤＢ内、回答生成LLMはクラウドAPI</strong></p>
+<div style="overflow-x:auto"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="border:1px solid #aaa;padding:8px">場面</th><th style="border:1px solid #aaa;padding:8px">埋め込みモデルへ渡すデータ</th><th style="border:1px solid #aaa;padding:8px">LLM へ渡すデータ</th></tr></thead><tbody><tr><td style="border:1px solid #aaa;padding:8px">初回の埋め込み生成</td><td style="border:1px solid #aaa;padding:8px">検索対象文書の全チャンク</td><td style="border:1px solid #aaa;padding:8px">なし</td></tr><tr><td style="border:1px solid #aaa;padding:8px">文書の追加・改訂</td><td style="border:1px solid #aaa;padding:8px">追加・変更したチャンク</td><td style="border:1px solid #aaa;padding:8px">なし</td></tr><tr><td style="border:1px solid #aaa;padding:8px">質問の埋め込み生成</td><td style="border:1px solid #aaa;padding:8px">質問文</td><td style="border:1px solid #aaa;padding:8px">なし</td></tr><tr><td style="border:1px solid #aaa;padding:8px">RAGの回答生成</td><td style="border:1px solid #aaa;padding:8px">なし</td><td style="border:1px solid #aaa;padding:8px">質問と取得した文書抜粋</td></tr></tbody></table></div>
 <p><strong>10-2</strong></p>
 <p><strong>アイ：</strong> 必要な抜粋の送信は許可されています。埋め込みはDB内にします。</p>
 <p><strong>神宮寺：</strong> モデルの品質・利用条件と、DB資源も確認しよう。</p>
-<p><strong>10-3</strong></p>
-<p><strong>解説：</strong> 埋め込みはDB内。外部LLMへの送信は必要な情報に限定。</p>
 <p><strong>11-3</strong></p>
-<p><strong>解説：</strong> multilingual-e5-large</p>
-<p><strong>神宮寺：</strong> 記事ではこのモデルを、DBで使えるONNX形式へ変換している。</p>
+<p><strong>multilingual-e5-large</strong></p>
+<p><strong>神宮寺：</strong> 日本語対応の著名なOSS埋め込みモデルの multilingual-e5-large を試してみてはどうかな。</p>
+<p><strong>神宮寺：</strong> ＤＢにインポートするにはこれを ONNX形式に変換しておく</p>
 <p><strong>11-1</strong></p>
-<p><strong>解説：</strong> 必要なファイル一式→Object Storage→DB</p>
+<p><strong>埋め込みモデルのインポート</strong></p>
+<p>必要なファイル一式</p>
+<p>Object Storage</p>
+<p>DBへロード</p>
 <p><strong>神宮寺：</strong> 認証と権限を準備してロードする。付属ファイルも忘れずに。</p>
 <p><strong>11-2</strong></p>
-<p><strong>解説：</strong> このモデルの入力：文書はpassage:／質問はquery:</p>
-<p><strong>アイ：</strong> 同じモデルと入力の約束をそろえ、取り込みと負荷検証を設計書へ。</p>
+<p><strong>アイ：</strong> これで質問文に似ている文書の検索は解決ですね？</p>
 <p><strong>神宮寺：</strong> では、似ている文書を見つければ案内に使えるかな？</p>
 </details>
 <h2 id="chapter-4">3. チケットの顧客と機種を絞ってベクトル検索する</h2>
 <p>似ている文書から、案内できる文書へ</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-12-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 意味が近い候補だけでは業務回答に使えないと気付く（12-1）" width="1024" height="665" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-12-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 意味が近い候補だけでは業務回答に使えないと気付く（12-2）" width="1024" height="1022" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-12-3.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 意味が近い候補だけでは業務回答に使えないと気付く（12-3）" width="1024" height="504" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-13-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 受付から顧客・機器・機種をたどる検索範囲を設計する（13-1）" width="1024" height="1285" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-13-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 受付から顧客・機器・機種をたどる検索範囲を設計する（13-2）" width="1024" height="610" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-14-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 文書閲覧の範囲と契約可否を分け、認可の責任を残す（14-1）" width="1024" height="895" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-14-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 文書閲覧の範囲と契約可否を分け、認可の責任を残す（14-2）" width="1024" height="1015" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-14-3.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 文書閲覧の範囲と契約可否を分け、認可の責任を残す（14-3）" width="1024" height="901" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-15-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — セッション状態と権限を含めた検索の設計を締める（15-1）" width="1024" height="937" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-15-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — セッション状態と権限を含めた検索の設計を締める（15-2）" width="1024" height="661" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-15-3.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — セッション状態と権限を含めた検索の設計を締める（15-3）" width="1024" height="579" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-12-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（12-1）" width="1024" height="1190" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-12-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（12-2）" width="1024" height="1022" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-12-3.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（12-3）" width="1024" height="790" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-13-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（13-1）" width="1024" height="1433" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-13-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（13-2）" width="1024" height="753" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-14-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（14-1）" width="1024" height="895" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-14-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（14-2）" width="1024" height="1015" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-14-3.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（14-3）" width="1024" height="913" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-15-1.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（15-1）" width="1024" height="1137" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-15-2.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（15-2）" width="1024" height="917" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-15-3.png" alt="3. チケットの顧客と機種を絞ってベクトル検索する — 似ている文書から、案内できる文書へ（15-3）" width="1024" height="922" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
 <p><strong>12-1</strong></p>
-<p><strong>解説：</strong> 設計の検証ケース：意味だけで検索</p>
+<p><strong>設計の検証ケース：意味だけで検索</strong></p>
 <p><strong>アイ：</strong> 「管理画面が開かない」に近い文章なら、候補は見つかりそうです。</p>
 <p><strong>12-2</strong></p>
-<p><strong>解説：</strong> 対象AX-100／候補に別機種BX-200・廃止済み文書</p>
+<p><strong>対象AX-100／候補に別機種BX-200・廃止済み文書</strong></p>
 <p><strong>アイ：</strong> あっ、別機種。それに廃止済み。これでは案内に使えません。</p>
 <p><strong>12-3</strong></p>
 <p><strong>神宮寺：</strong> 顧客が閲覧できるか、機種は合うか、公開中か。意味以外の条件も要るね。</p>
 <p><strong>13-1</strong></p>
-<p><strong>解説：</strong> 受付SR001→顧客C001→機器DEV001→機種AX-100</p>
-<p><strong>神宮寺：</strong> 受付から顧客を特定し、その顧客の台帳で機器と機種を調べる。</p>
+<p><strong>チケットから対象をたどる</strong></p>
+<p>チケット SR001</p>
+<p>顧客 C001</p>
+<p>機器 DEV001</p>
+<p>機種 AX-100</p>
+<p><strong>神宮寺：</strong> チケットから顧客を特定し、その顧客の台帳で機器と機種を調べる。</p>
 <p><strong>13-2</strong></p>
 <p><strong>アイ：</strong> 閲覧範囲・機種・公開状態で絞り、その中を距離順に。業務表が効きますね。</p>
 <p><strong>14-1</strong></p>
 <p><strong>神宮寺：</strong> 選択中の顧客だけを返すビューにする。未選択ならゼロ件だ。</p>
-<p><strong>アイ：</strong> 担当者がその受付を扱えるかの認可は、別に必要ですね。</p>
+<p><strong>アイ：</strong> 担当者がそのチケットを扱えるかの認可は、別に必要ですね。</p>
 <p><strong>14-2</strong></p>
 <p><strong>アイ：</strong> 契約が無効なら、文書も出しませんか？</p>
 <p><strong>神宮寺：</strong> 許可された技術文書は案内できる。現地保守の可否とは別だよ。</p>
 <p><strong>14-3</strong></p>
 <p><strong>アイ：</strong> 今どの顧客を担当しているか、DBはどう見分けるんですか？</p>
-<p><strong>神宮寺：</strong> 選んだ受付と顧客IDを、この接続の中に保持するんだ。</p>
+<p><strong>神宮寺：</strong> 選んだチケットと顧客IDを、この接続の中に保持するんだ。</p>
 <p><strong>15-1</strong></p>
-<p><strong>解説：</strong> 同じDBセッション：設定→照会→消去</p>
+<p><strong>接続に残した顧客情報の後始末</strong></p>
+<p>顧客を設定</p>
+<p>同じ接続で照会</p>
+<p>必ず消去</p>
 <p><strong>神宮寺：</strong> 正常終了でも失敗でも消去する。顧客の状態を次の依頼へ残さない。</p>
 <p><strong>15-2</strong></p>
 <p><strong>アイ：</strong> 別顧客・別機種・未選択をテストします。認可と状態の後始末も。</p>
@@ -194,41 +210,43 @@
 </details>
 <h2 id="chapter-5">4. 検索した文書を根拠にRAG（検索拡張生成）で回答する</h2>
 <p>根拠があるときだけ答える</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-16-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 検索した根拠から回答を作るRAGを選ぶ（16-1）" width="1024" height="913" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-16-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 検索した根拠から回答を作るRAGを選ぶ（16-2）" width="1024" height="855" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-16-3.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 検索した根拠から回答を作るRAGを選ぶ（16-3）" width="1024" height="551" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-17-3.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 引用の一致と回答の意味の正しさを分けて検証する（17-3）" width="1024" height="963" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-17-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 引用の一致と回答の意味の正しさを分けて検証する（17-1）" width="1024" height="1350" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-17-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 引用の一致と回答の意味の正しさを分けて検証する（17-2）" width="1024" height="906" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-18-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠不足の二種類をテストにする（18-1）" width="1024" height="1743" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-18-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠不足の二種類をテストにする（18-2）" width="1024" height="1488" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-18-3.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠不足の二種類をテストにする（18-3）" width="1024" height="994" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-19-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — アイがRAGの採用方針と評価を決める（19-1）" width="1024" height="913" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-19-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — アイがRAGの採用方針と評価を決める（19-2）" width="1024" height="889" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-16-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（16-1）" width="1024" height="913" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-16-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（16-2）" width="1024" height="931" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-16-3.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（16-3）" width="1024" height="763" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-17-3.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（17-3）" width="1024" height="963" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-17-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（17-1）" width="1024" height="1350" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-17-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（17-2）" width="1024" height="906" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-18-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（18-1）" width="1024" height="1743" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-18-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（18-2）" width="1024" height="1488" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-18-3.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（18-3）" width="1024" height="693" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-19-1.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（19-1）" width="1024" height="769" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-19-2.png" alt="4. 検索した文書を根拠にRAG（検索拡張生成）で回答する — 根拠があるときだけ答える（19-2）" width="1024" height="889" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
 <p><strong>16-1</strong></p>
 <p><strong>アイ：</strong> 毎回この資料を読み解くのは大変。確認手順をまとめられませんか？</p>
 <p><strong>神宮寺：</strong> 文書を質問に添えてLLMへ渡そう。RAG、検索拡張生成だ。</p>
 <p><strong>16-2</strong></p>
-<p><strong>解説：</strong> 取得本文＋質問→LLM→根拠付き回答</p>
+<p>取得本文と質問</p>
+<p>回答生成LLM</p>
+<p>根拠付き回答</p>
 <p><strong>アイ：</strong> 今回案内できる文書を、回答の根拠にするんですね。</p>
 <p><strong>16-3</strong></p>
-<p><strong>神宮寺：</strong> 検索・生成・検査の順はPL/SQLで固定する。処理選択までAIに任せない。</p>
+<p><strong>神宮寺：</strong> このRAGでは検索・生成・検査の順をPL/SQLで固定する。処理選択はAIに任せない。</p>
 <p><strong>17-3</strong></p>
-<p><strong>解説：</strong> KB001：電源・LAN・疎通を確認、ログを保存</p>
+<p><strong>KB001：電源・LAN・疎通を確認、ログを保存</strong></p>
 <p><strong>神宮寺：</strong> 影響を確かめずに再起動しない、という注意も大切だね。</p>
 <p><strong>17-1</strong></p>
-<p><strong>解説：</strong> 右の用紙KB012：顧客内の運用責任者へ連絡。訪問は契約と承認を確認</p>
+<p><strong>右の用紙KB012：顧客内の運用責任者へ連絡。訪問は契約と承認を確認</strong></p>
 <p><strong>アイ：</strong> 取得本文と、回答の文書ID・引用を照合します。</p>
 <p><strong>17-2</strong></p>
 <p><strong>アイ：</strong> 引用が原文にあっても、回答の意味まで正しいとは限りませんね。</p>
 <p><strong>神宮寺：</strong> そう。無関係な引用や、本文を超えた断定を確かめよう。根拠がない場合もね。</p>
 <p><strong>18-1</strong></p>
-<p><strong>解説：</strong> 根拠不足①：E999の文字列でも絞る→候補ゼロ</p>
-<p><strong>神宮寺：</strong> 記事のこの例ではLLMを呼ばず、根拠不足を返す。</p>
+<p><strong>根拠不足①：候補がない</strong></p>
+<p><strong>神宮寺：</strong> 記事のこの例はE999の文字列でも絞ると候補ゼロ。LLMを呼ばず、根拠不足を返す。</p>
 <p><strong>18-2</strong></p>
-<p><strong>解説：</strong> 根拠不足②：文書はあるが、保証延長の金額がない</p>
+<p><strong>根拠不足②：文書はあるが、保証延長の金額がない</strong></p>
 <p><strong>神宮寺：</strong> 検索できても、質問への答えが載っているとは限らない。</p>
 <p><strong>18-3</strong></p>
 <p><strong>アイ：</strong> 分からない答えは作らない。候補ゼロと、答えの記載なしを別々に試します。</p>
@@ -240,130 +258,196 @@
 </details>
 <h2 id="chapter-6">5. NL2SQL で契約情報を照会する</h2>
 <p>業務の言葉と、正確な判定をつなぐ</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-20-1.png" alt="5. NL2SQL で契約情報を照会する — 契約の可否をまずDBの業務ルールで定義する（20-1）" width="1024" height="969" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-20-2.png" alt="5. NL2SQL で契約情報を照会する — 契約の可否をまずDBの業務ルールで定義する（20-2）" width="1024" height="1345" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-20-3.png" alt="5. NL2SQL で契約情報を照会する — 契約の可否をまずDBの業務ルールで定義する（20-3）" width="1024" height="1007" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-21-1.png" alt="5. NL2SQL で契約情報を照会する — 自然言語からSQLを生成する仕組みと確認の段階を知る（21-1）" width="1024" height="854" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-21-2.png" alt="5. NL2SQL で契約情報を照会する — 自然言語からSQLを生成する仕組みと確認の段階を知る（21-2）" width="1024" height="995" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-21-3.png" alt="5. NL2SQL で契約情報を照会する — 自然言語からSQLを生成する仕組みと確認の段階を知る（21-3）" width="1024" height="629" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-22-1.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉をメタデータへ結び付ける（22-1）" width="1024" height="759" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-22-2.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉をメタデータへ結び付ける（22-2）" width="1024" height="661" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-22-3.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉をメタデータへ結び付ける（22-3）" width="1024" height="780" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-23-1.png" alt="5. NL2SQL で契約情報を照会する — 意味の説明と強制的な権限制御を分けて採用する（23-1）" width="1024" height="902" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-23-2.png" alt="5. NL2SQL で契約情報を照会する — 意味の説明と強制的な権限制御を分けて採用する（23-2）" width="1024" height="1023" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-21-0.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（21-0）" width="1024" height="847" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-21-1.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（21-1）" width="1024" height="677" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-1.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-1）" width="1024" height="969" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-4.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-4）" width="1024" height="867" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-5.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-5）" width="1024" height="1118" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-2.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-2）" width="1024" height="1469" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-3.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-3）" width="1024" height="1007" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-6.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-6）" width="1024" height="1008" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-7.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-7）" width="1024" height="1130" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-20-8.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（20-8）" width="1024" height="1418" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-21-2.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（21-2）" width="1024" height="1195" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-22-1.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（22-1）" width="1024" height="759" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-21-4.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（21-4）" width="1024" height="1079" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-22-2.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（22-2）" width="1024" height="726" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-22-5.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（22-5）" width="1024" height="726" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-21-3.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（21-3）" width="1024" height="769" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-22-4.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（22-4）" width="1024" height="851" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-22-3.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（22-3）" width="1024" height="956" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-23-1.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（23-1）" width="1024" height="1006" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-23-2.png" alt="5. NL2SQL で契約情報を照会する — 業務の言葉と、正確な判定をつなぐ（23-2）" width="1024" height="971" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
-<p><strong>20-1</strong></p>
-<p><strong>アイ：</strong> 契約がACTIVEなら、現地保守の対象ですか？</p>
-<p><strong>神宮寺：</strong> 状態だけでは足りない。期間とサービス範囲も確かめよう。</p>
-<p><strong>20-2</strong></p>
-<p><strong>解説：</strong> ACTIVE AND 開始日≦基準日≦終了日 AND ONSITE</p>
-<p><strong>解説：</strong> 検証用基準日：2026年10月15日</p>
-<p><strong>アイ：</strong> 三条件がそろえば対象。この論理式をビューのCASE式にします。</p>
-<p><strong>20-3</strong></p>
-<p><strong>神宮寺：</strong> 契約データと基準日が同じなら、判定結果も同じになる。</p>
-<p><strong>アイ：</strong> AIはルールを推論せず、判定済みの列を使うんですね。</p>
+<p><strong>21-0</strong></p>
+<p><strong>アイ：</strong> 「この顧客の現地保守対象機器を一覧にして」のような質問ができるようにしたいです。NL2SQLの出番ですか？</p>
 <p><strong>21-1</strong></p>
-<p><strong>アイ：</strong> 「この受付案件の顧客で、現地保守の対象機器を一覧にして」と聞きたいです。</p>
-<p><strong>神宮寺：</strong> 質問と表・列の情報からSQLを作る、NL2SQLを使おう。</p>
+<p><strong>神宮寺：</strong> Oracleには、Select AIというNL2SQL機能があるから検討してみよう。</p>
+<p><strong>20-1</strong></p>
+<p><strong>アイ：</strong> 現地保守の対象って、契約がACTIVEならいいんですか？</p>
+<p><strong>神宮寺：</strong> 状態だけでは足りない。期間とサービス範囲も確かめよう。</p>
+<p><strong>20-4</strong></p>
+<p><strong>アイ：</strong> 三つの条件をプロンプトに書いて、LLMに判定してもらえばよさそうですね。</p>
+<p><strong>20-5</strong></p>
+<p><strong>神宮寺：</strong> LLMの判断は揺れることがある。同じ条件でも、同じ答えになるとは限らない。</p>
+<p><strong>アイ：</strong> 契約の可否が毎回変わったら困りますね。</p>
+<p><strong>20-2</strong></p>
+<p><strong>現地保守の対象となる三条件</strong></p>
+<p><strong>解説：</strong> ACTIVE AND 開始日≦今日の日付≦終了日 AND ONSITE</p>
+<p>カレンダー：今日の日付が有効期間内か</p>
+<p><strong>アイ：</strong> それなら、三条件をANDで結ぶ論理式にします。ビューのCASE式で判定列を作れますね。</p>
+<p><strong>20-3</strong></p>
+<p><strong>神宮寺：</strong> 契約データと今日の日付が同じなら、判定結果も同じになる。</p>
+<p><strong>アイ：</strong> AIはルールを推論せず、判定済みの列を使うんですね。</p>
+<p><strong>20-6</strong></p>
+<p><strong>神宮寺：</strong> いいアイデアだね。VIEW as a Harnessと言えるかもしれない。</p>
+<p><strong>アイ：</strong> ハーネスって何ですか？</p>
+<p><strong>20-7</strong></p>
+<p><strong>神宮寺：</strong> LLMの外側で、使えるデータや道具、実行の進め方を制御する仕組みだよ。</p>
+<p><strong>アイ：</strong> AIへのお願いだけで、守らせようとしないんですね。</p>
+<p><strong>20-8</strong></p>
+<p><strong>ビューが担うハーネス</strong></p>
+<p>契約の業務表</p>
+<p>顧客の範囲</p>
+<p>CASE判定</p>
+<p>判定済みの列</p>
+<p><strong>神宮寺：</strong> ビューはハーネスの一部。ツールの実行や結果の検査は、別のコードで制御する。</p>
 <p><strong>21-2</strong></p>
-<p><strong>解説：</strong> 質問→SHOWSQLでSQL表示→別途、確認・実行・結果照合</p>
-<p><strong>神宮寺：</strong> SQLが表示されても、正しい検索結果を得たことにはならない。</p>
-<p><strong>21-3</strong></p>
-<p><strong>アイ：</strong> 許可したビューだけを参照させ、顧客の行も限定します。SQLと結果も検証します。</p>
+<p><strong>アイの試作テスト</strong></p>
+<p>自然言語の質問</p>
+<p>SHOWSQLで生成SQLを表示</p>
+<p>確認して実行・結果照合</p>
+<p><strong>神宮寺：</strong> まずSQLを見る。その後、実行した結果を正解と比べよう。</p>
 <p><strong>22-1</strong></p>
-<p><strong>解説：</strong> NL2SQLの検証：原記事の失敗例</p>
-<p><strong>アイ：</strong> 「この受付案件の顧客」がどのデータか伝わらず、SQLを作れなかったんですね。</p>
+<p><strong>参照先を制限する前の試作</strong></p>
+<p><strong>アイ：</strong> あれ、違う表を検索しています。名前だけでは、表の意味が伝わらないんですね。</p>
+<p><strong>21-4</strong></p>
+<p><strong>顧客のWHERE条件も誤り</strong></p>
+<p><strong>アイ：</strong> 表を直して再試行したら、今度は別の顧客の機器が混ざりました。WHERE句の条件が違います。</p>
 <p><strong>22-2</strong></p>
-<p><strong>神宮寺：</strong> ビューや列の意味を注釈で伝える。現地保守は判定済みの列を使わせよう。</p>
+<p><strong>神宮寺：</strong> Select AIには、参照先の制限や注釈など、生成を改善する手段がある。</p>
+<p><strong>22-5</strong></p>
+<p><strong>神宮寺：</strong> さっきのビューと組み合わせよう。顧客の範囲と契約判定はDBで守るんだ。</p>
+<p><strong>21-3</strong></p>
+<p><strong>アイ：</strong> 許可したビューだけを使う設定にします。列の意味も伝えられますか？</p>
+<p><strong>22-4</strong></p>
+<p><strong>神宮寺：</strong> 列の意味は注釈で伝えられる。直したSQLを例にするFeedbackも使える。</p>
 <p><strong>22-3</strong></p>
-<p><strong>アイ：</strong> 質問・列の意味・期待するSQLと結果をセットにして、説明不足も検証します。</p>
+<p><strong>期待する結果と照合</strong></p>
+<p><strong>アイ：</strong> 対象顧客だけになりました。期限切れと現地保守なしも対象外。今回のテストは期待どおりです。</p>
 <p><strong>23-1</strong></p>
-<p><strong>神宮寺：</strong> 注釈だけではアクセスを制限できない。ビュー・実行権限・担当者の認可も設計しよう。</p>
+<p><strong>神宮寺：</strong> 注釈は権限の代わりにはならない。ビューの実行権限と、担当者の認可もそろえよう。</p>
 <p><strong>23-2</strong></p>
-<p><strong>アイ：</strong> NL2SQLを採用し、範囲と権限はDBで制限します。接続の設定・消去も共通に。</p>
+<p><strong>アイ：</strong> 自然な言葉の質問と、DBで守る条件。役割を分けて設計できました。</p>
 <p><strong>神宮寺：</strong> では、手順と契約を一度に聞かれたら？</p>
 </details>
 <h2 id="chapter-7">6. 文書検索と契約照会をAgentのツールにする</h2>
-<p>一つの問い合わせへ、設計をつなぎ直す</p>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-24-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの処理を選ぶAgentを検討する（24-1）" width="1024" height="1078" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-24-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの処理を選ぶAgentを検討する（24-2）" width="1024" height="887" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-24-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの処理を選ぶAgentを検討する（24-3）" width="1024" height="641" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-25-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — ツールの制御範囲と外部LLMに渡る情報を確認する（25-1）" width="1024" height="821" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-25-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — ツールの制御範囲と外部LLMに渡る情報を確認する（25-2）" width="1024" height="1057" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-25-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — ツールの制御範囲と外部LLMに渡る情報を確認する（25-3）" width="1024" height="875" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-26-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 実行した根拠を照合できる設計にする：課題と具体例（26-1）" width="1024" height="934" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-26-5.png" alt="6. 文書検索と契約照会をAgentのツールにする — 実行した根拠を照合できる設計にする：課題と具体例（26-5）" width="1024" height="867" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-26-4.png" alt="6. 文書検索と契約照会をAgentのツールにする — 実行した根拠を照合できる設計にする：課題と具体例（26-4）" width="1024" height="1179" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-26-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 実行した根拠を照合できる設計にする：仕組みと判断（26-2）" width="1024" height="996" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-26-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 実行した根拠を照合できる設計にする：仕組みと判断（26-3）" width="1024" height="750" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-27-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 冒頭の問い合わせを受入条件へ落とし込む（27-1）" width="1024" height="887" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-27-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 冒頭の問い合わせを受入条件へ落とし込む（27-2）" width="1024" height="969" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-27-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 冒頭の問い合わせを受入条件へ落とし込む（27-3）" width="1024" height="998" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-28-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 設計を完遂し、アイ自身の判断として全体を回収する（28-1）" width="1024" height="965" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-28-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 設計を完遂し、アイ自身の判断として全体を回収する（28-2）" width="1024" height="710" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v13/panel-28-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 設計を完遂し、アイ自身の判断として全体を回収する（28-3）" width="1024" height="804" loading="lazy" decoding="async"></figure>
+<p>二つの道具で仕組みを理解し、要件に合うAgentの設計へ</p>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-24-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（24-1）" width="1024" height="1038" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-24-4.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（24-4）" width="1024" height="1022" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-25-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（25-1）" width="1024" height="833" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-24-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（24-2）" width="1024" height="1035" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-24-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（24-3）" width="1024" height="1004" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-24-5.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（24-5）" width="1024" height="1163" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-25-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（25-2）" width="1024" height="1417" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-26-6.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（26-6）" width="1024" height="953" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-26-7.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（26-7）" width="1024" height="1060" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-26-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（26-1）" width="1024" height="1168" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-26-5.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（26-5）" width="1024" height="919" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-25-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（25-3）" width="1024" height="960" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-25-4.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（25-4）" width="1024" height="782" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-26-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（26-2）" width="1024" height="1578" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-26-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（26-3）" width="1024" height="750" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-27-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（27-1）" width="1024" height="1366" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-27-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（27-2）" width="1024" height="969" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-27-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（27-3）" width="1024" height="1146" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-28-1.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（28-1）" width="1024" height="1107" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-28-2.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（28-2）" width="1024" height="751" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-28-4.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（28-4）" width="1024" height="751" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v14/panel-28-3.png" alt="6. 文書検索と契約照会をAgentのツールにする — 二つの道具で仕組みを理解し、要件に合うAgentの設計へ（28-3）" width="1024" height="804" loading="lazy" decoding="async"></figure>
 <details>
 <summary>この章の会話をテキストで読む</summary>
 <p><strong>24-1</strong></p>
-<p><strong>アイ：</strong> 手順だけ、契約だけ、両方。情報不足の依頼もあり、処理を選びたいです。</p>
-<p><strong>神宮寺：</strong> 固定分岐でもできる。Agentなら、必要な道具の選択をLLMに任せられる。</p>
-<p><strong>24-2</strong></p>
-<p><strong>解説：</strong> 仕事＝Task／担当＝Agent／組合せて実行＝Team</p>
-<p><strong>神宮寺：</strong> この例は一人のAgent。文書検索と契約照会の二つの道具を使う。</p>
-<p><strong>24-3</strong></p>
-<p><strong>アイ：</strong> 柔軟に道具を選べるAgentを採用します。誤選択・不要な呼出し・情報不足も検証します。</p>
+<p><strong>アイ：</strong> 手順だけ、契約だけ、両方。依頼に合わせて処理を選びたいです。</p>
+<p><strong>神宮寺：</strong> Agentなら、目的に応じてLLMが道具を選び、結果を見て次の処理を考える。</p>
+<p><strong>24-4</strong></p>
+<p><strong>アイ：</strong> 道具って、システムに用意する処理のことですか？</p>
+<p><strong>神宮寺：</strong> そう。Agentが呼び出せる形にした処理を、ツールと呼ぶ。</p>
 <p><strong>25-1</strong></p>
-<p><strong>アイ：</strong> 契約ツールも、毎回SQLを生成するんですか？</p>
-<p><strong>神宮寺：</strong> この例は固定SQLで判定列を読む。文書検索も固定SQLだよ。</p>
+<p><strong>アイ：</strong> NL2SQLとの関係も整理したいです。</p>
+<p><strong>神宮寺：</strong> まずはAgentを理解するため、固定SQLの二つのツールで試そう。</p>
+<p><strong>24-2</strong></p>
+<p><strong>固定SQLを実行する二つのツール</strong></p>
+<p>文書検索：条件で絞って距離順</p>
+<p>契約照会：ビューの判定列を読む</p>
+<p><strong>神宮寺：</strong> ここでは毎回SQLを生成しない。道具をどう呼び、結果を使うかに集中しよう。</p>
+<p><strong>24-3</strong></p>
+<p><strong>アイ：</strong> なるほど。先ほどのNL2SQLと切り分けると、Agentの働きが見えますね。</p>
+<p><strong>24-5</strong></p>
+<p><strong>アイ：</strong> このAgentを動かす基盤は、どこに置くんですか？</p>
+<p><strong>神宮寺：</strong> DB内でAgentを実行できるSelect AI Agentを使ってみよう。</p>
 <p><strong>25-2</strong></p>
-<p><strong>解説：</strong> ①DB→LLM：指示・定義／②LLM→DB：呼出し／③DB→LLM：結果</p>
-<p><strong>アイ：</strong> 判断するLLMは外部。指示・定義・結果の送信内容も設計します。</p>
-<p><strong>25-3</strong></p>
-<p><strong>解説：</strong> ツールで検査：対象の一致／受付切替／呼出回数</p>
-<p><strong>神宮寺：</strong> 受付と機器はアプリで確定する。不一致は実行前に止めよう。</p>
-<p><strong>アイ：</strong> 参照と対応案まで。予約や契約更新はさせません。</p>
+<p><strong>Select AI Agentの実行基盤</strong></p>
+<p>DB：ツール実行と履歴</p>
+<p>クラウド：判断するLLM</p>
+<p><strong>アイ：</strong> 基盤はDBの中。LLMへ渡す指示・ツール定義・結果の内容も設計します。</p>
+<p><strong>26-6</strong></p>
+<p><strong>検査を入れる前の試作：未呼出し</strong></p>
+<p><strong>アイ：</strong> 「契約を確認しました」と答えたのに、ツールを呼んでいません！</p>
+<p><strong>26-7</strong></p>
+<p><strong>失敗例②：実行エラーを成功扱い</strong></p>
+<p><strong>神宮寺：</strong> 呼んでいても安心できない。実行に失敗したのに、成功したように答えることもある。</p>
 <p><strong>26-1</strong></p>
-<p><strong>解説：</strong> 照合検査のケース：依頼DEV001／返却例DEV005</p>
-<p><strong>アイ：</strong> あっ、別の機器です。「確認しました」と答えても、合格にはできません。</p>
+<p><strong>失敗例③：呼び出しの引数違い</strong></p>
+<p><strong>アイ：</strong> DEV001の依頼なのに、DEV005を渡していました。結果の機器も違います。</p>
 <p><strong>26-5</strong></p>
-<p><strong>アイ：</strong> この回答が、何を実行して作られたかも確かめたいです。</p>
-<p><strong>神宮寺：</strong> 依頼と実行履歴を結び付けておこう。</p>
-<p><strong>26-4</strong></p>
-<p><strong>解説：</strong> アプリのrun_id ↔ AgentのTEAM_EXEC_ID</p>
-<p><strong>神宮寺：</strong> 別々の実行IDだ。同じ依頼の履歴として対応付けよう。</p>
+<p><strong>アイ：</strong> LLMに「実行を確認して」と、もう一度頼めばいいですか？</p>
+<p><strong>神宮寺：</strong> その確認も間違えることがある。ここもハーネスの仕事だよ。</p>
+<p><strong>25-3</strong></p>
+<p><strong>今のチケットをコードで保証する</strong></p>
+<p><strong>神宮寺：</strong> 担当権限を確認した今のチケットから、対象機器をアプリで設定する。不一致はDBで止める。</p>
+<p><strong>25-4</strong></p>
+<p><strong>アイ：</strong> 検索語はLLMに任せても、チケットと対象は勝手に変えさせないんですね。</p>
 <p><strong>26-2</strong></p>
-<p><strong>解説：</strong> 対象・入力↔成功出力↔回答</p>
-<p><strong>神宮寺：</strong> 履歴に行があるだけでは足りない。成功した出力まで突き合わせる。</p>
+<p><strong>ツールの履歴で実行を確かめる</strong></p>
+<p>今回の入力と対象</p>
+<p>成功した返却内容</p>
+<p>回答との照合</p>
+<p><strong>神宮寺：</strong> Select AI Agentにはツールの呼出履歴を参照するビューがある。記録と返却内容をコードで確かめよう。</p>
 <p><strong>26-3</strong></p>
-<p><strong>アイ：</strong> 実行前の拒否に加え、誤った結果も合格にしません。引用・契約値・ツール選択を照合します。</p>
+<p><strong>アイ：</strong> 呼出しなし・実行失敗・対象違いなら、成功した回答として通さない。引用や契約値を照合する検査も用意しました。</p>
 <p><strong>27-1</strong></p>
-<p><strong>解説：</strong> 冒頭の問い合わせで設計レビュー：DEV001への対応案</p>
-<p><strong>解説：</strong> KB001：電源・LAN・疎通の確認とログ保存</p>
-<p><strong>アイ：</strong> 影響を確かめずに再起動しない。この注意も残します。</p>
+<p><strong>検査を加えて、もう一度</strong></p>
+<p>KB001：電源・LAN・疎通の確認とログ保存</p>
+<p><strong>アイ：</strong> 二つのツールを実行し、対象も結果も一致しました。再起動前の影響確認も、回答に残っています。</p>
 <p><strong>27-2</strong></p>
-<p><strong>解説：</strong> KB012：顧客内の運用責任者へ連絡</p>
+<p><strong>KB012：顧客内の運用責任者へ連絡</strong></p>
 <p><strong>アイ：</strong> 現地保守の対象でも、訪問の確約には担当者の承認が必要です。</p>
 <p><strong>神宮寺：</strong> 対象・承認済み・予約済みは別。画面でも区別しよう。</p>
 <p><strong>27-3</strong></p>
-<p><strong>解説：</strong> 対象→承認確認／対象外・不明→訪問承認へ進めない</p>
+<p><strong>契約判定と訪問承認を分ける</strong></p>
+<p>対象：承認を確認</p>
+<p>対象外：承認へ進めない</p>
+<p>不明：承認へ進めない</p>
 <p><strong>アイ：</strong> 技術手順は閲覧が許可されていれば案内する。ここも分けて検証します。</p>
 <p><strong>28-1</strong></p>
-<p><strong>解説：</strong> 同じDB：文書・契約・埋め込み／回答・照会・ツール選択へ</p>
-<p><strong>アイ：</strong> 業務ルールと使えるデータは、私たちが設計する。AIに任せる部分も整理できました。</p>
+<p><strong>AIに任せること、コードで守ること</strong></p>
+<p><strong>アイ：</strong> 二つの固定SQLツールで、AgentとSelect AI Agentの働きがつながりました。</p>
 <p><strong>28-2</strong></p>
-<p><strong>神宮寺：</strong> 要件と判断理由がつながった。基本設計は完了だね。</p>
-<p><strong>アイ：</strong> 誰の何を支えるかから、設計できました。</p>
+<p><strong>神宮寺：</strong> 今度は要件に合わせて、必要なツールと、その守り方を設計できるね。</p>
+<p><strong>28-4</strong></p>
+<p><strong>アイ：</strong> はい。使えるデータ、引数、失敗時の扱いまで含めて。Agentアプリを設計できそうです！</p>
 <p><strong>28-3</strong></p>
-<p><strong>解説：</strong> 基本設計完了。次の一歩へ。</p>
-<p><strong>解説：</strong> コードと環境準備は原記事のAppendixへ。</p>
+<p><strong>次は、要件に合ったツール群へ</strong></p>
+<p>コードと環境準備は原記事のAppendixへ。</p>
 </details>
 <details>
 <summary>技術補足：コード・設定・データへ進むためのガイド（全文）</summary>
 <h3>『データのそばに、AIを。』補足ガイド</h3>
 <p>漫画から原記事のコード・設定・データへ進むために</p>
 <p>原記事：荒川裕二（Qiita）<br><a href="https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960">https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960</a><br>デモの公開リポジトリ：<br><a href="https://github.com/kutsushitaneko/orajam41-in-database-ai-demo">https://github.com/kutsushitaneko/orajam41-in-database-ai-demo</a></p>
-<p>このガイドは、保存した原記事の全6章とAppendix A〜Gをもとに、30ページ・83コマの漫画で短縮した説明を補うものです。以下の「原記事の見出し」は、上記URL内で探すための目印です。コードを試す際には、その見出しからリンクされた全文・対象バージョン・準備条件を確認してください。説明用抜粋をそのまま完全な実行手順として使う構成にはしていません。</p>
+<p>このガイドは、保存した原記事の全6章とAppendix A〜Gをもとに、42ページ・97コマの漫画で短縮した説明を補うものです。以下の「原記事の見出し」は、上記URL内で探すための目印です。コードを試す際には、その見出しからリンクされた全文・対象バージョン・準備条件を確認してください。説明用抜粋をそのまま完全な実行手順として使う構成にはしていません。</p>
 <p>漫画の青山アイと神宮寺、二人の会話や外見は漫画用の創作です。原記事に登場する企業・機種・保守手順も架空のデモです。</p>
 <p>アイは保守サポート窓口を支えるシステムの設計担当、神宮寺は同じ開発チームの先輩レビュアーです。文書全量の埋め込み用外部送信を避け、必要な抜粋などの外部生成LLM利用を認める要件は、選定の過程を描くために補った創作です。</p>
 <h3>1．文書を探す問いと、契約を照会する問い</h3>
@@ -373,7 +457,7 @@
 <p>文書本文を改訂した際は、対応する埋め込みも更新します。古い本文由来のベクトルと新しい本文が組になった状態を放置しないことが必要です。検索用ビュー、実行ユーザー、公開状態の管理も設計対象です。</p>
 <p>詳しく読む見出し：「意味の類似性で探すドキュメントとリレーショナルデータで管理される業務上の契約条件を同じDBで扱う」「データを複製すると検索以外の仕事も増える」。この考え方をOracleだけの利点として一般化せず、原記事が挙げる他のRDB構成との関係も参照してください。</p>
 <h3>2．同じモデルで埋め込み、本文も残す</h3>
-<p>対応する漫画：9〜12ページ<br>原記事の見出し：「2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る」</p>
+<p>対応する漫画：9〜14ページ<br>原記事の見出し：「2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る」</p>
 <p>原記事の例はmultilingual-e5-largeを対応するONNX形式でDBに取り込み、文書と質問の両方に使います。検索用入力には、文書の先頭に「passage: 」、質問の先頭に「query: 」を付けます。日本語でもこの英語の接頭辞を使うモデル固有の約束です。他のモデルに同じ前処理を無条件に適用する意味ではありません。</p>
 <p>1024次元とは、埋め込みが1024個の数値からなるという意味です。「第10次元が契約を表す」のように各数値を人間の概念へ直接割り当てる説明はできません。同じ1024次元でも、異なるモデルの出力をそのまま混ぜて距離比較することはできません。</p>
 <p>埋め込みは原文を復元するための圧縮ファイルではありません。OJ41_CHUNKSには本文のchunk_textとVECTOR型のembeddingを両方保存します。検索後の表示やRAGへの入力に使うのは本文です。長い文書は入力長の制限に合わせて分割し、見出し・手順・注意事項のつながりも考えます。デモは短い16文書をそれぞれ1チャンクにしています。</p>
@@ -388,7 +472,7 @@
 <li>リポジトリ内の主な参照先：sql/setup/10_load_embedding_model.sql、sql/demos/00b_embedding_basics.sql。</li>
 </ul>
 <h3>3．チケットの範囲と契約ルールをDBで扱う</h3>
-<p>対応する漫画：13〜16ページ<br>原記事の見出し：「3. チケットの顧客と機種を絞ってベクトル検索する」</p>
+<p>対応する漫画：15〜19ページ<br>原記事の見出し：「3. チケットの顧客と機種を絞ってベクトル検索する」</p>
 <p>例では受付チケットSR001から顧客C001を特定し、その顧客の台帳で保守登録番号DEV001を照合して機種AX-100を得ます。保守登録番号、製造番号、機種名は別の識別情報です。文書は公開済みで、共通公開またはその顧客向けのものに限定し、対象機種も合わせます。</p>
 <p>OJ41_CASE_CTXは、このデモ用のPL/SQLパッケージです。open_caseでチケットを開き、パッケージ本体の非公開変数にチケットと顧客を保持します。ビューはcustomer_id()などを参照して行を制限します。状態は担当者アカウントではなくDBセッションに属します。チケット未選択なら対象ビューは0件です。clear_caseで消去し、無効なチケットを開こうとした際も前の状態を残さない設計です。</p>
 <p>接続プールでは、要求ごとに設定・消去し、処理中の接続を別要求へ渡さないことが必要です。原記事のDatabase Actionsでは、チケット設定・SELECT・解除を一つのスクリプトとしてまとめて実行します。同じワークシートでも別実行へセッション状態が引き継がれるとは限りません。AIプロファイル名を関数の引数に指定しても、チケット状態の引継ぎを代替するものではありません。</p>
@@ -401,32 +485,29 @@
 <p>このデモの文書案内は、有効契約を必須条件としていません。文書を閲覧できる条件と、現地保守を利用できる条件は別です。また、選択中チケットへ別顧客の情報を混ぜないことと、担当者本人がそのチケットを扱えることも別です。本番の認証・認可、実行ユーザーの権限分離が必要です。所有者のベース表への直接アクセスまで、ビューが禁止するわけではありません。</p>
 <p>詳しく読む見出し：「対応中のチケットの顧客に検索範囲を限定する仕組み」「契約の判定も LLM に推測させずビューで判定する」「デモA」。表・ビュー・パッケージの全文はsql/setup/35_create_demo_tables.sql、検索の例はsql/demos/01_vector_search.sqlへ進めます。担当者認可とDeep Data Securityの補足は、第5章「チケットの混入防止と、担当者の権限を分けて考える」にあります。OJ41_CASE_CTXそのものはDDSのコンテキストではありません。</p>
 <h3>4．RAGの検索・生成・検査を分ける</h3>
-<p>対応する漫画：17〜20ページ<br>原記事の見出し：「4. 検索した文書を根拠にRAG（検索拡張生成）で回答する」</p>
+<p>対応する漫画：20〜23ページ<br>原記事の見出し：「4. 検索した文書を根拠にRAG（検索拡張生成）で回答する」</p>
 <p>OJ41_RAG.answer_questionは、検索して文書を取り出し、質問・DBで特定した機種・文書ID・本文を入力へ加え、外部LLMを呼び、返却JSONなどを検査する流れをPL/SQLにまとめます。検索結果0件ならLLMを呼ばない分岐があります。LLMが次の処理を自由に選ぶAgentとは、この制御の仕方が異なります。</p>
 <p>E999の例では、質問中のエラーコード文字列を含む文書に絞るため候補が0件になります。距離の大きさだけで「答えなし」と決めているわけではありません。保証延長料金の例では、上位候補は取得できても金額の記載がなく、原記事の掲載結果は根拠不足です。候補があることと答えがあることを分けて扱います。</p>
 <p>回答検査は、JSONの形式、文書IDが取得結果にあるか、引用文字列がその本文にあるかなどを確認します。引用が存在しても、回答が引用の意味に沿っているとは限りません。正しい資料を取れなかったなら検索条件・チャンク・取得件数を、取れたのに誤答したなら資料の渡し方や主張との対応を調べます。</p>
 <p>詳しく読む見出し：「検索・拡張・生成の流れを、DB内のPL/SQLでつなぐ」「デモB」「検索の失敗と生成の失敗を分けて直す」。主なコードはsql/setup/68_rag_body.sql、sql/setup/66_answer_guard_body.sql、sql/demos/01b_rag.sqlです。漫画では省略した入力JSONや回答ルール、実行結果の違いを原記事で確認できます。</p>
 <h3>5．NL2SQLで何を説明し、何を制限するか</h3>
-<p>対応する漫画：21〜24ページ<br>原記事の見出し：「5. NL2SQL で契約情報を照会する」</p>
+<p>対応する漫画：24〜32ページ<br>原記事の見出し：「5. NL2SQL で契約情報を照会する」</p>
 <p>自然言語の質問だけでは、業務用語と表・列の対応が伝わらないことがあります。原記事は、ビュー全体と列へANNOTATIONSを登録し、「保守登録番号」がDEVICE_ID、「現地保守の対象」がONSITE_ELIGIBLEという意味をLLMへ伝えます。annotations=trueが注釈を送る設定です。注釈自体が契約や権限を判定するのではなく、契約条件は引き続きビューの計算列が担います。</p>
 <p>object_listはメタデータの対象、enforce_object_list=trueは生成SQLの参照先をその一覧に制限する設定です。デモでは顧客・文書の制限済みビューと、制限不要の補助表を含め、制限を迂回できるベース表を除きます。ビューが行を限定し、生成SQLの設定が参照先を限定するという分担です。これらを設定してもDBユーザー自体の権限は変わりません。</p>
 <p>デモCの比較は、同じ対象一覧、object_list_mode=all、comments=falseの条件でannotationsを切り替えます。SQL生成用LLMを指定し、この比較のために埋め込みモデルを設定する構成ではありません。別の補足にあるobject_list_mode=automatedは、関連メタデータの選択にDB内埋め込みを使える構成で、メタデータ索引の非同期作成など追加の準備があります。</p>
 <p>showsqlは生成SQLを表示するもので、結果行を取得する処理ではありません。参照先・列・条件を確認したうえで、チケットを設定した同じDBセッションでSQLを別途実行します。原記事の掲載例ではDEV001・DEV005・DEV006・DEV008の4台が正解です。SQLとして解析できても、意味的に正しい条件とは限りません。説明文やORAエラーが戻る場合もあり、戻り値を無条件に実行可能なSQLとして扱いません。自動的に修正を繰り返して成功する機能とも同一視しません。</p>
 <p>原記事の注釈あり・なし各3回の結果は、そのデータとモデルでの観測です。将来の質問や別環境の成功率を保証する値ではありません。Deep Data Securityは認可を追加する選択肢として紹介されていますが、設定手順は記事の範囲外です。担当者の許可とチケットの範囲の両条件を満たす設計が必要で、別々の権限付与が自動的に積集合になるとは考えません。</p>
 <p>詳しく読む見出し：「デモC」「質問とデータ定義のずれに合わせてチューニングする」「チケットの混入防止と、担当者の権限を分けて考える」。プロファイル・注釈の準備はsrc/webinar_demo/nl2sql_compare.py、比較用SQLはsql/demos/02_nl2sql.sql、検証条件はdocs/nl2sql-annotations-validation.mdへ進めます。</p>
+<p>第14版の試作で描く誤った表の選択、WHERE条件の誤り、検査導入前のAgentの失敗と再試行は、設計を学ぶ過程を示す創作です。原記事のNL2SQL比較は注釈なしでSQL未生成、注釈ありで正解4件という各3回の観測です。</p>
+<p>VIEW as a Harnessは、ビューによる顧客の絞り込みとCASEによる業務判定をハーネスの一部として捉える説明です。製品機能名ではありません。実行権限、対象引数の固定、ツールの実行結果や回答の検査は、別途コードで設計します。</p>
+<p>Select AI Feedbackは、修正した質問・SQLの例を後続の生成時に役立てる機能です。モデルの重みを再学習する意味ではありません。<br><a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/select-ai-feedback.html">https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/select-ai-feedback.html</a></p>
 <h3>6．Agentの呼出しと業務アクションを区別する</h3>
-<p>対応する漫画：25〜30ページ<br>原記事の見出し：「6. 文書検索と契約照会をAgentのツールにする」</p>
+<p>対応する漫画：33〜42ページ<br>原記事の見出し：「6. 文書検索と契約照会をAgentのツールにする」</p>
 <p>原記事のTeamはAgentが一つ、Taskが一つ、文書検索と契約照会のToolが二つという構成です。外部LLMがツールや引数を選び、DB側が登録済みPL/SQLを実行します。両ツールの内部は固定SQLです。呼ぶたびにNL2SQLでSQLを生成する例ではありません。</p>
 <p>Agentは質問から検索語p_queryを作れますが、チケット・対象機器・顧客・機種を勝手に変える役割は持ちません。アプリが対象を照合して保持し、PL/SQLのcheck_call()が機器の不一致やチケット切替などを検査します。デモのツール呼出し上限は1要求あたり合計4回です。必要な根拠がそろえば終了し、各ツールを必ず1回だけ呼ぶという固定回数の検査ではありません。</p>
 <p>文書ツールはPUBLICとCUSTOMERの区分ごとに最も近い1件を選びます。第4章のRAGが全体の上位3件を取るのとは異なる方針です。契約ツールは判定済みの値と理由を返します。Agent用プロファイルには、この固定SQLの構成ではobject_listとenforce_object_listを設定せず、ビューとツール側検査で範囲を制限します。</p>
 <p>「確認した」という回答文だけでは、ツールの成功を確認できません。USER_AI_AGENT_TOOL_HISTORYでツール名、入力、成功・失敗、返却値、実行の対応を調べ、さらに回答と取得結果を比較します。履歴の行があるだけでも不十分です。</p>
-<p>識別子は区別します。</p>
-<ul>
-<li>run_id：デモ側が作り、ツール返却JSONなどに付けて同じ要求の結果を照合する値。</li>
-<li>TEAM_EXEC_ID：フレームワーク側のチーム実行識別子。</li>
-<li>conversation_id：会話履歴を管理する値。</li>
-</ul>
-<p>原記事のrun_idとTEAM_EXEC_IDは文字列の大部分が似ていますが別の値です。ハイフンを取り除けば同一になるという関係ではありません。見た目の類似ではなく、ツール出力内のrun_idなどを完全一致で照合します。</p>
+<p>今回の依頼の入力・対象・実行履歴・返却結果を対応付け、別の依頼の結果を混ぜないようにします。履歴の存在だけでなく、返却内容が成功を表すかもコードで検査します。</p>
 <p>契約上の現地保守対象であっても、訪問の承認・予約完了ではありません。今回のデモは対応案までです。自動検査版もvalidation_scope=evidence_only、review_required=true、action_status=not_executedという範囲で、意味の保証や予約処理は行いません。対象外の契約に対し、承認さえあれば訪問できるような案内へ変えないことも必要です。</p>
 <p>予約・更新へ拡張する場合は、実行前に契約と承認を再確認します。承認待ちの間に契約が変わる可能性もあります。必要な更新をまとめるトランザクション、依頼IDや一意制約による二重実行防止を設計し、処理後の履歴確認だけに依存しません。</p>
 <p>詳しく読む見出し：「実行する仕事に合わせて Select AI Agentのコンポーネントを定義する」「Task・Agent・Teamを組み合わせる」「デモD」「補足：履歴と引用の確認を自動化する場合」「業務アクションにつなぐとき、DBの知識が役立つ」。主なコードはsql/setup/61_agent_context_body.sql、62_contract_tool.sql、63_knowledge_tool.sql、64_business_ai_template.sql、sql/demos/03_support_agent.sql、04_checked_agent.sqlです。</p>
