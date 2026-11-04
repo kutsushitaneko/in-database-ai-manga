@@ -1,18 +1,17 @@
 <!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>データのそばに、AIを。――アイと先輩の保守支援システム設計</title><style>body{margin:0;background:#f4f4f2;color:#202020;font:16px/1.85 Meiryo,"Noto Sans CJK JP",sans-serif}main,nav{box-sizing:border-box;max-width:800px;margin:auto;padding:20px 12px;background:white}nav{padding-bottom:0}nav ol{padding-left:1.5em}a{color:#176640;overflow-wrap:anywhere}h1{font-size:1.7rem;line-height:1.5}h2{font-size:1.45rem;line-height:1.6;border-top:3px solid #333;margin-top:3rem;padding-top:1rem;scroll-margin-top:1rem}h3,h4{line-height:1.6}p,li{overflow-wrap:anywhere}figure{margin:20px 0}figure img{display:block;width:100%;height:auto}details{margin:1.5rem 0;border:1px solid #bbb;border-radius:6px;padding:12px}summary{cursor:pointer;font-weight:bold}details p{margin:.8rem 0}@media(max-width:500px){main,nav{padding-left:8px;padding-right:8px}h1{font-size:1.4rem}h2{font-size:1.2rem}details{padding:8px}}</style></head><body><nav aria-label="公開ファイル"></nav><nav aria-label="章の目次"><details><summary>目次</summary><ol><li><a href="#chapter-1">プロローグ</a></li><li><a href="#chapter-2">第1章 文書と業務データを、一つのDBで</a></li><li><a href="#chapter-3">第2章 埋め込みモデルをDBの中へ</a></li><li><a href="#chapter-4">第3章 顧客の範囲を守って探す</a></li><li><a href="#chapter-5">第4章 ビューで守るRAG</a></li><li><a href="#chapter-6">第5章 Select AIで、言葉からSQLへ</a></li><li><a href="#chapter-7">第6章 Select AI Agentに道具を渡す</a></li><li><a href="#chapter-8">補足ガイド</a></li><li><a href="#chapter-9">謝辞</a></li></ol></details></nav><main><h1>データのそばに、AIを。――アイと先輩の保守支援システム設計</h1>
 <figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v22/panel-36-1.png" alt="表紙・紹介・目次 — データのそばに、AIを。 アイと先輩の保守支援システム設計 原作：荒川裕二（日本オラクル）（36-1）" width="1024" height="1412" loading="lazy" decoding="async"></figure>
-<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v22/panel-36-2.png" alt="表紙・紹介・目次 — このマンガについて 保守窓口の支援システムを任された新人エンジニアのアイが、先輩の神宮寺と、文書検索・契約照会・AIエージェントを設計していく物語です。 社内文書の埋め込みはDB内で行い、検索準備のために全文書を外へ送りません。回答を作るときは、質問と必要な文書抜粋を外部のLLMへ渡す設計を選びます。 AIの検索や処理をデータのそばに置く「インデータベースAI」と、LLMの実行を支える「ハーネス」を、Oracle AI Databaseの機能とともに紹介します。 荒川裕二のQiita記事をもとに、マンガ用に構成・脚色しています。 この漫画の制作に使用した Manga Generator を公開されている月森ナギ様に感謝します。 この漫画の内容は原作者個人の経験・見解であり所属する日本オラクルを代表するものではありません。（36-2）" width="1024" height="1473" loading="lazy" decoding="async"></figure>
+<figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v22/panel-36-2-intro-20261104.png" alt="表紙・紹介・目次 — このマンガについて 保守窓口の支援システムを任された新人エンジニアの青山アイが、同じ開発チームの先輩の神宮寺と、文書検索・契約照会・AIエージェントの設計・試作を通じて AIシステムを設計する自信を得ていく物語です。 AI 機能をデータのそばに置く「インデータベースAI」と、AIエージェントを支える「ハーネス」を、最新の Oracle AI Database の機能とともに紹介します。 Qiita で公開している作者（荒川裕二）自身のブログ記事をもとに、マンガ用に構成・脚色しています。 この漫画の制作に使用した Manga Generator を公開されている月森ナギ様に感謝します。 この漫画の内容は原作者個人の経験・見解であり所属する日本オラクルを代表するものではありません。（36-2）" width="1024" height="1381" loading="lazy" decoding="async"></figure>
 <figure><img src="https://kutsushitaneko.github.io/in-database-ai-manga/assets/v22/panel-36-3.png" alt="表紙・紹介・目次 — 目次 1. 文書と業務データを、一つのDBで 文書の意味検索と業務データの照会を組み合わせる 2. 埋め込みモデルをDBの中へ DBの中でベクトルを作る 3. 顧客の範囲を守って探す チケットの顧客と機種を絞ってベクトル検索する 4. ビューで守るRAG ビューで絞った文書を根拠に、RAGで回答する 5. Select AIで、言葉からSQLへ NL2SQLで契約情報を照会する 6. Select AI Agentに道具を渡す 文書検索と契約照会をAgentのツールにする 補足ガイド（36-3）" width="1024" height="1253" loading="lazy" decoding="async"></figure>
 <details>
 <summary>表紙・紹介・目次の文字をテキストで読む</summary>
 <p>データのそばに、AIを。</p>
 <p>アイと先輩の保守支援システム設計</p>
-<p>原作：荒川裕二（日本オラクル）</p>
+<p>制作・原作：荒川裕二（日本オラクル）</p>
 <p>このマンガについて</p>
-<p>保守窓口の支援システムを任された新人エンジニアのアイが、先輩の神宮寺と、文書検索・契約照会・AIエージェントを設計していく物語です。</p>
-<p>社内文書の埋め込みはDB内で行い、検索準備のために全文書を外へ送りません。回答を作るときは、質問と必要な文書抜粋を外部のLLMへ渡す設計を選びます。</p>
-<p>AIの検索や処理をデータのそばに置く「インデータベースAI」と、LLMの実行を支える「ハーネス」を、Oracle AI Databaseの機能とともに紹介します。</p>
-<p>荒川裕二のQiita記事をもとに、マンガ用に構成・脚色しています。</p>
+<p>保守窓口の支援システムを任された新人エンジニアの青山アイが、同じ開発チームの先輩の神宮寺と、文書検索・契約照会・AIエージェントの設計・試作を通じて AIシステムを設計する自信を得ていく物語です。</p>
+<p>AI 機能をデータのそばに置く「インデータベースAI」と、AIエージェントを支える「ハーネス」を、最新の Oracle AI Database の機能とともに紹介します。</p>
+<p>Qiita で公開している作者（荒川裕二）自身のブログ記事をもとに、マンガ用に構成・脚色しています。</p>
 <p>この漫画の制作に使用した Manga Generator を公開されている月森ナギ様に感謝します。</p>
 <p>この漫画の内容は原作者個人の経験・見解であり所属する日本オラクルを代表するものではありません。</p>
 <p>目次</p>
