@@ -1,8 +1,8 @@
 ## 魔法少女アイ ～データのそばに、魔法を。～
 
-![扉絵](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-front-01.png)
+![扉絵](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-front-01.png)
 
-![このマンガについて](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-front-02.png)
+![このマンガについて](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-front-02.png)
 
 <details>
 <summary>「このマンガについて」をテキストで読む</summary>
@@ -27,27 +27,27 @@
 
 ## プロローグ　新米魔法少女、水鏡に立つ
 
-![プロローグ 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-01.png)
+![プロローグ 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-01.png)
 
-![プロローグ 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-02.png)
+![プロローグ 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-02.png)
 
-![プロローグ 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-03.png)
+![プロローグ 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-03.png)
 
-![プロローグ 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-04.png)
+![プロローグ 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-04.png)
 
-![プロローグ 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-05.png)
+![プロローグ 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-05.png)
 
-![プロローグ 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-06.png)
+![プロローグ 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-06.png)
 
-![プロローグ 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-07.png)
+![プロローグ 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-07.png)
 
-![プロローグ 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-08.png)
+![プロローグ 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-08.png)
 
-![プロローグ 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-09.png)
+![プロローグ 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-09.png)
 
-![プロローグ 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-10.png)
+![プロローグ 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-10.png)
 
-![プロローグ 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-pro-11.png)
+![プロローグ 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-pro-11.png)
 
 <details>
 <summary>プロローグの会話をテキストで読む</summary>
@@ -118,82 +118,104 @@
 
 ## 第1話　ただ一つの真実の図書館
 
-![第1話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-01.png)
+![第1話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-01.png)
 
-![第1話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-02.png)
+![第1話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-01b.png)
 
-![第1話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-03.png)
+![第1話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-02.png)
 
-![第1話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-04.png)
+![第1話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-03.png)
 
-![第1話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-05.png)
+![第1話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-04.png)
 
-![第1話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-06.png)
+![第1話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-04b.png)
 
-![第1話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-07.png)
+![第1話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-05.png)
 
-![第1話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-08.png)
+![第1話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-06.png)
 
-![第1話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-09.png)
+![第1話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-07.png)
 
-![第1話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-10.png)
+![第1話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-08.png)
 
-![第1話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c1-11.png)
+![第1話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-08b.png)
+
+![第1話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-09.png)
+
+![第1話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-10.png)
+
+![第1話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c1-11.png)
 
 <details>
 <summary>第1話の会話をテキストで読む</summary>
 
 **第1話 1コマ目**
 
-**アイ：** 手順の巻物は検索の塔へ、契約の石板はこっちの金庫へ。別々にしまって整理整頓です！
-
-**神宮寺：** では、契約が変わったら？
+**アイ：** 手順の巻物は検索の塔へ、契約の石板はこっちの金庫へ、山の地図は地図師の館へ。別々にしまって整理整頓です！
 
 **第1話 2コマ目**
 
-**アイ：** 両方に書き写します！
+**アイ：** ミラさんの星見の塔は、谷と峠が入り組んだ山の中。塔と保守ギルドの拠点、それに通れない区域は、地図で確かめます！
+
+**神宮寺：** では、契約や地図が変わったら？
 
 **第1話 3コマ目**
+
+**アイ：** 三か所に書き写します！
+
+**第1話 4コマ目**
 
 **コピーゴーストA：** 竜騎士団は解約済みでーす
 
 **コピーゴーストB：** いや、契約中でーす
 
-**第1話 4コマ目**
+**第1話 5コマ目**
 
 **コピーゴーストC：** 最新？ 知らなーい
 
 **ガルド：** 誰が解約したと!?
 
-**第1話 5コマ目**
+**第1話 6コマ目**
+
+**地図のコピーゴースト：** その峠、通れまーす！
+
+**神宮寺：** それは古い地図だ。先週の雪崩で、その峠は通れないよ
+
+**第1話 7コマ目**
 
 **アイ：** な、なにこれ!?
 
 **神宮寺：** 写したあと、置き去りにされた分身の幽霊。コピーゴーストだ
 
-**第1話 6コマ目**
-
-**神宮寺：** 別の場所へ写すと、契約の変更や、取り下げた手順まで、ずっと写し直し続けないといけない
-
-**第1話 7コマ目**
-
-**神宮寺：** だから、手順の巻物も契約の石板も、この一つの図書館にしまう。ここが『ただ一つの真実の図書館』だ
-
 **第1話 8コマ目**
 
-**アイ：** つまり、ここにしまえば、いつでも 最新の石板と突き合わせられるってことですね！
-
-**神宮寺：** そう。手順は意味で探す。現地保守を頼めるかは、契約の条件で調べる。性質の違う問いを、一つの図書館の中で組み合わせられる
+**神宮寺：** 別の場所へ写すと、契約の変更や、取り下げた手順、通れなくなった道まで、ずっと写し直し続けないといけない
 
 **第1話 9コマ目**
 
-**コピーゴーストA：** 最新、まぶしーい！
+**神宮寺：** だから、手順の巻物も契約の石板も山の地図も、この一つの図書館にしまう。ここが『ただ一つの真実の図書館』だ
 
 **第1話 10コマ目**
 
-**ハルシーネ：** わたくしのかわいい手下たちが！ ……ふん、今日のところは見逃してさしあげますわ
+**アイ：** つまり、ここにしまえば、最新の石板や地図と、いつでも突き合わせられるってことですね！
+
+**神宮寺：** そう。手順は意味で探す。現地保守を頼めるかは、契約の条件で調べる
 
 **第1話 11コマ目**
+
+**神宮寺：** 現地へ行けるかは、地図で調べる。塔と拠点の場所、通れない区域も、同じ図書館の中で組み合わせられる
+
+**アイ：** 頼めるだけでなく、行けるかも確かめるんですね！
+
+**第1話 12コマ目**
+
+**コピーゴーストA：** 最新、まぶしーい！
+
+**第1話 13コマ目**
+
+**ハルシーネ：** わたくしのかわいい手下たちが！ ……ふん、今日のところは見逃してさしあげますわ
+
+**第1話 14コマ目**
 
 **アイ：** あの人、プロローグでも……誰ですか？
 
@@ -203,19 +225,37 @@
 
 ## 解説：第1話の種明かし
 
-![第1話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-01.png)
+![第1話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-01.png)
 
-![第1話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-02.png)
+![第1話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-02.png)
 
-![第1話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-intro.png)
+![第1話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-intro.png)
 
-![第1話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-03.png)
+![第1話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-03.png)
 
-![第1話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-04.png)
+![第1話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-04.png)
 
-![第1話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-05.png)
+![第1話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-05.png)
 
-![第1話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t1-06.png)
+![第1話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-map-01.png)
+
+![第1話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-spatial.png)
+
+公式文書：[Oracle Spatial — Spatial Concepts](https://docs.oracle.com/en/database/oracle/oracle-database/26/spatl/spatial-concepts.html)
+
+![第1話の種明かし 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-rail-01.png)
+
+![第1話の種明かし 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-rail-02.png)
+
+![第1話の種明かし 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-rail-04.png)
+
+![第1話の種明かし 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-rail-06.png)
+
+鉄道会社の例の素材・出典：[本編マンガ](https://qiita.com/yuji-arakawa/items/1c6d0ae4400ca2b4bae3)。原記事・デモには地理空間情報の例はありません。
+
+![第1話の種明かし 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-map-02.png)
+
+![第1話の種明かし 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t1-06.png)
 
 [1. 文書の意味検索と業務データの照会を組み合わせる](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#1-%E6%96%87%E6%9B%B8%E3%81%AE%E6%84%8F%E5%91%B3%E6%A4%9C%E7%B4%A2%E3%81%A8%E6%A5%AD%E5%8B%99%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%85%A7%E4%BC%9A%E3%82%92%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B)
 
@@ -235,6 +275,7 @@
 | ただ一つの真実の図書館 | コンバージド・データベースOracle AI Database |
 | 手順の巻物 | 保守文書の表 |
 | 契約の石板 | 契約の表 |
+| 山の地図（魔導地図） | 地理空間情報（位置・区域） |
 | コピーゴースト | 複製先の古いデータ |
 
 データの正本を一か所に置く（Single Source of Truth）
@@ -245,16 +286,17 @@
 
 Oracle AI Database
 
-業務表も、文書も、ベクトルも。一つのDBで
+業務表も、文書も、ベクトルも、位置情報も。一つのDBで
 
 **第1話の種明かし 4コマ目**
 
-性質の違う二つの問い
+性質の違う三つの問い
 
 | 魔法の世界 | 実際の技術 |
 | --- | --- |
 | 手順を探す | 意味が似ている文書の検索（ベクトル検索） |
 | 現地保守を頼めるか | 契約の条件の照会（SQL） |
+| 現地へ行けるか | 位置と区域の条件の照会（SQL） |
 
 **第1話の種明かし 5コマ目**
 
@@ -266,15 +308,61 @@ Oracle AI Database
 
 **第1話の種明かし 6コマ目**
 
-**アイ：** 一つの図書館、つまりデータベースの中なら、写さずに、元の契約の表とそのまま突き合わせられるんですね
+**アイ：** 一つの図書館、つまりデータベースの中なら、写さずに、元の契約の表や地理空間情報と突き合わせられるんですね
 
-**神宮寺：** そう。SQLのJOINやEXISTSで、文書の検索と契約の照会を組み合わせる
+**神宮寺：** そう。SQLで、文書の検索と契約や場所の照会を組み合わせる
 
-写さずに元の表を参照 JOIN・EXISTSで組み合わせる
-
-原記事「1. 文書の意味検索と業務データの照会を組み合わせる」
+元の表・文書・位置情報 同じDBのSQLで組み合わせる
 
 **第1話の種明かし 7コマ目**
+
+**アイ：** 魔導地図の位置や区域は、実際には何で調べるんですか？
+
+**神宮寺：** Oracle Spatialだよ。位置や区域のデータをDBに保存し、空間的な関係をSQLで調べられる
+
+魔導地図の種明かし 位置・区域もDBの中
+
+**第1話の種明かし 8コマ目**
+
+Oracle AI Databaseの機能
+
+Oracle Spatial
+
+位置や区域を保存し、空間的な関係をSQLで調べる
+
+位置・区域をDBへ 空間的な関係をSQLで照会
+
+**第1話の種明かし 9コマ目**
+
+**解説：** 本編マンガの鉄道会社の例
+
+**解説：** 表と文書に加え、走行位置や区域も同じDBで扱う
+
+**第1話の種明かし 10コマ目**
+
+**解説：** 車両タイプ・期間と、県への進入を調べる
+
+**解説：** 表の条件と、走行位置・県の区域を組み合わせる
+
+**第1話の種明かし 11コマ目**
+
+**解説：** 報告書の文章の条件も、同じDBで調べる
+
+**解説：** 意味の似た報告の検索も組み合わせられる
+
+**第1話の種明かし 12コマ目**
+
+**解説：** 表・地図・文章の条件を、同じDBのSQLで組み合わせる
+
+**第1話の種明かし 13コマ目**
+
+**アイ：** 塔へ行く道と、契約と、手順。鉄道の例も、違う種類の条件を一緒に調べているんですね
+
+**神宮寺：** そう。これが、種類の違うデータを一つのDBで扱う良さだよ
+
+表・地図・文章 一つのDBで組み合わせる
+
+**第1話の種明かし 14コマ目**
 
 **アイ：** コピーゴーストは、同期の遅れだったんですね
 
@@ -284,33 +372,33 @@ Oracle AI Database
 
 ## 第2話　意味を読む精霊
 
-![第2話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-01.png)
+![第2話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-01.png)
 
-![第2話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-02.png)
+![第2話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-02.png)
 
-![第2話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-03.png)
+![第2話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-03.png)
 
-![第2話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-04.png)
+![第2話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-04.png)
 
-![第2話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-05.png)
+![第2話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-05.png)
 
-![第2話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-06.png)
+![第2話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-06.png)
 
-![第2話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-07.png)
+![第2話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-07.png)
 
-![第2話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-08.png)
+![第2話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-08.png)
 
-![第2話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-09.png)
+![第2話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-09.png)
 
-![第2話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-10.png)
+![第2話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-10.png)
 
-![第2話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-11.png)
+![第2話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-11.png)
 
-![第2話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-12.png)
+![第2話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-12.png)
 
-![第2話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-13.png)
+![第2話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-13.png)
 
-![第2話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c2-14.png)
+![第2話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c2-14.png)
 
 <details>
 <summary>第2話の会話をテキストで読む</summary>
@@ -349,9 +437,15 @@ Oracle AI Database
 
 **第2話 8コマ目**
 
-**神宮寺：** 矢が指すのは、意味の星空の一点だ。意味が似ている巻物ほど、矢の向きが近い
+**神宮寺：** 矢が指すのは、意味の天界の一点だ。意味が似ている巻物ほど、矢の向きが近い
 
 **アイ：** ミラさんの星図みたい！
+
+**解説：** 第一　制御陣に入れないとき
+
+**解説：** 管理盤の明かりが消えたとき
+
+**解説：** 飛竜舎のそうじ
 
 第一　制御陣に入れないとき
 
@@ -385,15 +479,15 @@ Oracle AI Database
 
 ## 解説：第2話の種明かし
 
-![第2話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t2-01.png)
+![第2話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t2-01.png)
 
-![第2話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t2-02.png)
+![第2話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t2-02.png)
 
-![第2話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t2-intro.png)
+![第2話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t2-intro.png)
 
-![第2話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t2-03.png)
+![第2話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t2-03.png)
 
-![第2話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t2-04.png)
+![第2話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t2-04.png)
 
 原記事（第1節）：[ベクトル検索は文字の一致だけでは拾えない候補も探してくれる](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E6%A4%9C%E7%B4%A2%E3%81%AF%E6%96%87%E5%AD%97%E3%81%AE%E4%B8%80%E8%87%B4%E3%81%A0%E3%81%91%E3%81%A7%E3%81%AF%E6%8B%BE%E3%81%88%E3%81%AA%E3%81%84%E5%80%99%E8%A3%9C%E3%82%82%E6%8E%A2%E3%81%97%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B)・[ベクトル検索の処理概要](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E6%A4%9C%E7%B4%A2%E3%81%AE%E5%87%A6%E7%90%86%E6%A6%82%E8%A6%81)
 
@@ -407,7 +501,7 @@ Oracle AI Database
 | 精霊の塔へ運ぶ | 外部の埋め込みAPIへ送る |
 | 意味読みの精霊 | 埋め込みモデル |
 | 概念の矢 | ベクトル |
-| 意味の星空 | ベクトル空間 |
+| 意味の天界 | ベクトル空間 |
 | 方角の羅針盤 | VECTOR\_DISTANCE（COSINE） |
 | 相談札の言葉 | 質問文 |
 
@@ -451,23 +545,25 @@ SQLで検索
 
 ## 第3話　精霊を図書館に招け
 
-![第3話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-01.png)
+![第3話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-01.png)
 
-![第3話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-02.png)
+![第3話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-02.png)
 
-![第3話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-03.png)
+![第3話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-03.png)
 
-![第3話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-04.png)
+![第3話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-04.png)
 
-![第3話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-05.png)
+![第3話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-05.png)
 
-![第3話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-06.png)
+![第3話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-06.png)
 
-![第3話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-07.png)
+![第3話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-07.png)
 
-![第3話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-08.png)
+![第3話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-08.png)
 
-![第3話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c3-09.png)
+![第3話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-09.png)
+
+![第3話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c3-09b.png)
 
 <details>
 <summary>第3話の会話をテキストで読む</summary>
@@ -518,21 +614,33 @@ SQLで検索
 
 **アイ：** 巻物を書き直したら、矢も放ち直さないとですね
 
+**第3話 10コマ目**
+
+**アイ：** 取り下げた巻物をしまったら、天界の矢も一緒に消えました！
+
+**神宮寺：** 巻物と矢を、一緒に管理しているからね。外に矢の写しを置いたままなら、またコピーゴーストが残ってしまう
+
 </details>
 
 ## 解説：第3話の種明かし
 
-![第3話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t3-01.png)
+![第3話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-01.png)
 
-![第3話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t3-02.png)
+![第3話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-02.png)
 
-![第3話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t3-intro.png)
+![第3話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-intro.png)
 
-![第3話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t3-03.png)
+![第3話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-03.png)
 
-![第3話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t3-04.png)
+![第3話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-03b.png)
 
-![第3話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t3-05.png)
+![第3話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-03c.png)
+
+公式文書：[Transactions](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/transactions.html)・[Data Concurrency and Consistency](https://docs.oracle.com/en/database/oracle/oracle-database/26/cncpt/data-concurrency-and-consistency.html)・[Generate Vector Embeddings](https://docs.oracle.com/en/database/oracle/oracle-database/26/vecse/generate-vector-embeddings-node.html)。検索への反映は通常のREAD COMMITTEDで、コミット後に開始する検索を指します。
+
+![第3話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-04.png)
+
+![第3話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t3-05.png)
 
 [2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#2-%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92db%E5%86%85%E3%81%B8%E6%8C%81%E3%81%A1%E8%BE%BC%E3%81%BFdb%E3%81%AE%E4%B8%AD%E3%81%A7%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%82%92%E4%BD%9C%E3%82%8B)
 
@@ -563,11 +671,27 @@ Oracle AI Databaseの機能
 
 **第3話の種明かし 4コマ目**
 
-**神宮寺：** 埋め込みは、DBのCPUとメモリーを使う。どれだけ使うかは、自分の環境で測ろう。文書を直したら、ベクトルも作り直す
+**アイ：** 巻物と矢が一緒に消えたのは……
 
-埋め込みはDBの中 回答のLLMは外部 文書を直したら作り直す
+**神宮寺：** 文書とベクトルを同じDBの表に保存しているから。文書の更新と、ベクトルの作り直しを、同じトランザクションで行える
+
+文書とベクトルを同じ表に 更新を一つのトランザクションで
 
 **第3話の種明かし 5コマ目**
+
+**神宮寺：** 文書とベクトルの行を取り下げ、コミットしたら、その後に始めた検索にも反映される。自動でベクトルを作り直す、という意味ではないよ
+
+**アイ：** 巻物と矢を、別々に写し直す必要がないんですね
+
+取り下げをコミット その後の検索へ反映
+
+**第3話の種明かし 6コマ目**
+
+**神宮寺：** 埋め込みは、DBのCPUとメモリーを使う。どれだけ使うかは、自分の環境で測ろう。回答を作るLLMは外部だよ
+
+埋め込みはDBの中 CPU・メモリーは実測 回答のLLMは外部
+
+**第3話の種明かし 7コマ目**
 
 ```
 SELECT doc_id, chunk_text,
@@ -580,7 +704,7 @@ ORDER BY distance, doc_id
 FETCH FIRST 3 ROWS ONLY;
 ```
 
-**第3話の種明かし 6コマ目**
+**第3話の種明かし 8コマ目**
 
 原記事「2. 埋め込みモデルをDB内へ持ち込み、DBの中でベクトルを作る」
 
@@ -588,27 +712,27 @@ FETCH FIRST 3 ROWS ONLY;
 
 ## 第4話　護符と結界
 
-![第4話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-01.png)
+![第4話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-01.png)
 
-![第4話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-02.png)
+![第4話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-02.png)
 
-![第4話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-03.png)
+![第4話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-03.png)
 
-![第4話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-04.png)
+![第4話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-04.png)
 
-![第4話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-05.png)
+![第4話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-05.png)
 
-![第4話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-06.png)
+![第4話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-06.png)
 
-![第4話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-07.png)
+![第4話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-07.png)
 
-![第4話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-08.png)
+![第4話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-08.png)
 
-![第4話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-09.png)
+![第4話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-09.png)
 
-![第4話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-10.png)
+![第4話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-10.png)
 
-![第4話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c4-11.png)
+![第4話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c4-11.png)
 
 <details>
 <summary>第4話の会話をテキストで読む</summary>
@@ -673,13 +797,13 @@ FETCH FIRST 3 ROWS ONLY;
 
 ## 解説：第4話の種明かし
 
-![第4話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t4-01.png)
+![第4話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t4-01.png)
 
-![第4話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t4-02.png)
+![第4話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t4-02.png)
 
-![第4話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t4-03.png)
+![第4話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t4-03.png)
 
-![第4話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t4-04.png)
+![第4話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t4-04.png)
 
 原記事：[混ぜるな危険！](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#%E6%B7%B7%E3%81%9C%E3%82%8B%E3%81%AA%E5%8D%B1%E9%99%BA)・[対応中のチケットの顧客に検索範囲を限定する仕組み](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#%E5%AF%BE%E5%BF%9C%E4%B8%AD%E3%81%AE%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%AE%E9%A1%A7%E5%AE%A2%E3%81%AB%E6%A4%9C%E7%B4%A2%E7%AF%84%E5%9B%B2%E3%82%92%E9%99%90%E5%AE%9A%E3%81%99%E3%82%8B%E4%BB%95%E7%B5%84%E3%81%BF)
 
@@ -719,17 +843,17 @@ FETCH FIRST 3 ROWS ONLY;
 
 ## 第5話　判定の印
 
-![第5話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c5-01.png)
+![第5話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c5-01.png)
 
-![第5話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c5-02.png)
+![第5話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c5-02.png)
 
-![第5話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c5-03.png)
+![第5話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c5-03.png)
 
-![第5話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c5-04.png)
+![第5話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c5-04.png)
 
-![第5話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c5-05.png)
+![第5話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c5-05.png)
 
-![第5話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c5-06.png)
+![第5話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c5-06.png)
 
 <details>
 <summary>第5話の会話をテキストで読む</summary>
@@ -778,25 +902,25 @@ FETCH FIRST 3 ROWS ONLY;
 
 ## 解説：第5話の種明かし
 
-![第5話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-01.png)
+![第5話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-01.png)
 
-![第5話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-02.png)
+![第5話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-02.png)
 
-![第5話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-03.png)
+![第5話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-03.png)
 
-![第5話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-04.png)
+![第5話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-04.png)
 
-![第5話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-05.png)
+![第5話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-05.png)
 
-![第5話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-05a.png)
+![第5話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-05a.png)
 
-![第5話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-05b.png)
+![第5話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-05b.png)
 
-![第5話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-05c.png)
+![第5話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-05c.png)
 
-![第5話の種明かし 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-05d.png)
+![第5話の種明かし 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-05d.png)
 
-![第5話の種明かし 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t5-06.png)
+![第5話の種明かし 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t5-06.png)
 
 原記事：[契約の判定も LLM に推測させずビューで判定する](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#%E5%A5%91%E7%B4%84%E3%81%AE%E5%88%A4%E5%AE%9A%E3%82%82-llm-%E3%81%AB%E6%8E%A8%E6%B8%AC%E3%81%95%E3%81%9B%E3%81%9A%E3%83%93%E3%83%A5%E3%83%BC%E3%81%A7%E5%88%A4%E5%AE%9A%E3%81%99%E3%82%8B)・[デモA](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#%E3%83%87%E3%83%A2a%E3%83%AA%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B-%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E6%A4%9C%E7%B4%A2--join--%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E6%A9%9F%E7%A8%AE%E3%81%A7%E7%B5%9E%E3%81%A3%E3%81%A6%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%B7%9D%E9%9B%A2%E3%81%A7%E4%B8%A6%E3%81%B9%E3%82%8B)
 
@@ -881,29 +1005,29 @@ NL2SQLでも 判定列を使う
 
 ## 第6話　根拠を召喚せよ
 
-![第6話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-01.png)
+![第6話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-01.png)
 
-![第6話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-02.png)
+![第6話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-02.png)
 
-![第6話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-03.png)
+![第6話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-03.png)
 
-![第6話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-04.png)
+![第6話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-04.png)
 
-![第6話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-05.png)
+![第6話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-05.png)
 
-![第6話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-06.png)
+![第6話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-06.png)
 
-![第6話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-07.png)
+![第6話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-07.png)
 
-![第6話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-08.png)
+![第6話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-08.png)
 
-![第6話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-09.png)
+![第6話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-09.png)
 
-![第6話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-10.png)
+![第6話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-10.png)
 
-![第6話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-11.png)
+![第6話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-11.png)
 
-![第6話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c6-12.png)
+![第6話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c6-12.png)
 
 <details>
 <summary>第6話の会話をテキストで読む</summary>
@@ -980,19 +1104,19 @@ NL2SQLでも 判定列を使う
 
 ## 解説：第6話の種明かし
 
-![第6話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-01.png)
+![第6話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-01.png)
 
-![第6話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-intro.png)
+![第6話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-intro.png)
 
-![第6話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-02.png)
+![第6話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-02.png)
 
-![第6話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-03.png)
+![第6話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-03.png)
 
-![第6話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-04.png)
+![第6話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-04.png)
 
-![第6話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-05.png)
+![第6話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-05.png)
 
-![第6話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t6-06.png)
+![第6話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t6-06.png)
 
 [4. 検索した文書を根拠にRAG（検索拡張生成）で回答する](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#4-%E6%A4%9C%E7%B4%A2%E3%81%97%E3%81%9F%E6%96%87%E6%9B%B8%E3%82%92%E6%A0%B9%E6%8B%A0%E3%81%ABrag%E6%A4%9C%E7%B4%A2%E6%8B%A1%E5%BC%B5%E7%94%9F%E6%88%90%E3%81%A7%E5%9B%9E%E7%AD%94%E3%81%99%E3%82%8B)
 
@@ -1051,41 +1175,41 @@ RAG（検索拡張生成）
 
 ## 第7話　言の葉魔法
 
-![第7話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-01.png)
+![第7話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-01.png)
 
-![第7話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-02.png)
+![第7話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-02.png)
 
-![第7話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-03.png)
+![第7話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-03.png)
 
-![第7話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-04.png)
+![第7話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-04.png)
 
-![第7話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-05.png)
+![第7話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-05.png)
 
-![第7話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-06.png)
+![第7話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-06.png)
 
-![第7話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-07.png)
+![第7話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-07.png)
 
-![第7話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-08.png)
+![第7話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-08.png)
 
-![第7話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-09.png)
+![第7話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-09.png)
 
-![第7話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-10.png)
+![第7話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-10.png)
 
-![第7話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-11.png)
+![第7話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-11.png)
 
-![第7話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-12.png)
+![第7話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-12.png)
 
-![第7話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-13.png)
+![第7話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-13.png)
 
-![第7話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-14.png)
+![第7話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-14.png)
 
-![第7話 15コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-15.png)
+![第7話 15コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-15.png)
 
-![第7話 16コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-15b.png)
+![第7話 16コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-15b.png)
 
-![第7話 17コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-16.png)
+![第7話 17コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-16.png)
 
-![第7話 18コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c7-17.png)
+![第7話 18コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c7-17.png)
 
 <details>
 <summary>第7話の会話をテキストで読む</summary>
@@ -1208,21 +1332,21 @@ RAG（検索拡張生成）
 
 ## 解説：第7話の種明かし
 
-![第7話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-01.png)
+![第7話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-01.png)
 
-![第7話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-intro.png)
+![第7話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-intro.png)
 
-![第7話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-02.png)
+![第7話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-02.png)
 
-![第7話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-04.png)
+![第7話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-04.png)
 
-![第7話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-05.png)
+![第7話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-05.png)
 
-![第7話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-06.png)
+![第7話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-06.png)
 
-![第7話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-07.png)
+![第7話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-07.png)
 
-![第7話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t7-08.png)
+![第7話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t7-08.png)
 
 [5. NL2SQL で契約情報を照会する](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#5-nl2sql-%E3%81%A7%E5%A5%91%E7%B4%84%E6%83%85%E5%A0%B1%E3%82%92%E7%85%A7%E4%BC%9A%E3%81%99%E3%82%8B)
 
@@ -1305,37 +1429,37 @@ WHERE
 
 ## 第8話　使い魔と手綱
 
-![第8話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-01.png)
+![第8話 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-01.png)
 
-![第8話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-02.png)
+![第8話 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-02.png)
 
-![第8話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-03.png)
+![第8話 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-03.png)
 
-![第8話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-04.png)
+![第8話 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-04.png)
 
-![第8話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-05.png)
+![第8話 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-05.png)
 
-![第8話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-06.png)
+![第8話 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-06.png)
 
-![第8話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-07.png)
+![第8話 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-07.png)
 
-![第8話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-08.png)
+![第8話 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-08.png)
 
-![第8話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-09.png)
+![第8話 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-09.png)
 
-![第8話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-10.png)
+![第8話 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-10.png)
 
-![第8話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-11.png)
+![第8話 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-11.png)
 
-![第8話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-12.png)
+![第8話 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-12.png)
 
-![第8話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-13.png)
+![第8話 13コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-13.png)
 
-![第8話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-14.png)
+![第8話 14コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-14.png)
 
-![第8話 15コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-15.png)
+![第8話 15コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-15.png)
 
-![第8話 16コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-c8-16.png)
+![第8話 16コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-c8-16.png)
 
 <details>
 <summary>第8話の会話をテキストで読む</summary>
@@ -1450,31 +1574,31 @@ WHERE
 
 ## 解説：第8話の種明かし
 
-![第8話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-01.png)
+![第8話の種明かし 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-01.png)
 
-![第8話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-intro.png)
+![第8話の種明かし 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-intro.png)
 
-![第8話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-02.png)
+![第8話の種明かし 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-02.png)
 
-![第8話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-03.png)
+![第8話の種明かし 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-03.png)
 
-![第8話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-04.png)
+![第8話の種明かし 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-04.png)
 
-![第8話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-05.png)
+![第8話の種明かし 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-05.png)
 
-![第8話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-06.png)
+![第8話の種明かし 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-06.png)
 
-![第8話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-07.png)
+![第8話の種明かし 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-07.png)
 
-![第8話の種明かし 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-harness.png)
+![第8話の種明かし 9コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-harness.png)
 
-![第8話の種明かし 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-07b.png)
+![第8話の種明かし 10コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-07b.png)
 
 紹介ブログ：[Oracle AI Database Agent Engineの紹介](https://blogs.oracle.com/oracle4engineer/ja-introducing-oracle-ai-database-agent-engine)
 
-![第8話の種明かし 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-engine.png)
+![第8話の種明かし 11コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-engine.png)
 
-![第8話の種明かし 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-t8-08.png)
+![第8話の種明かし 12コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-t8-08.png)
 
 [6. 文書検索と契約照会をAgentのツールにする](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960#6-%E6%96%87%E6%9B%B8%E6%A4%9C%E7%B4%A2%E3%81%A8%E5%A5%91%E7%B4%84%E7%85%A7%E4%BC%9A%E3%82%92agent%E3%81%AE%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B)
 
@@ -1601,21 +1725,21 @@ Open Agent Specification
 
 ## エピローグ　データのそばに、魔法を。
 
-![エピローグ 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-01.png)
+![エピローグ 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-01.png)
 
-![エピローグ 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-02.png)
+![エピローグ 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-02.png)
 
-![エピローグ 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-03.png)
+![エピローグ 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-03.png)
 
-![エピローグ 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-04.png)
+![エピローグ 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-04.png)
 
-![エピローグ 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-05.png)
+![エピローグ 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-05.png)
 
-![エピローグ 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-06.png)
+![エピローグ 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-06.png)
 
-![エピローグ 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-07.png)
+![エピローグ 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-07.png)
 
-![エピローグ 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-epi-08.png)
+![エピローグ 8コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-epi-08.png)
 
 <details>
 <summary>エピローグの会話をテキストで読む</summary>
@@ -1662,15 +1786,23 @@ Open Agent Specification
 
 ## 解説：おわりに
 
-![おわりに 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-tend-01.png)
+![おわりに 1コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-01.png)
 
-![おわりに 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-tend-intro.png)
+![おわりに 2コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-summary-1.png)
 
-![おわりに 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-tend-03.png)
+![おわりに 3コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-summary-2.png)
+
+![おわりに 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-operations.png)
+
+公式文書：[RMAN](https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/getting-started-rman.html)・[High Availability](https://docs.oracle.com/en/database/oracle/oracle-database/26/haovw/overview-of-ha.html)・[Auditing](https://docs.oracle.com/en/database/oracle/oracle-database/26/dbseg/introduction-to-auditing.html)。必要な構成・設定・運用を設計して使います。
+
+![おわりに 5コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-intro.png)
+
+![おわりに 6コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-03.png)
 
 [原記事](https://qiita.com/yuji-arakawa/items/1df29b844478f9df5960)・[本編のマンガ](https://qiita.com/yuji-arakawa/items/1c6d0ae4400ca2b4bae3)
 
-![おわりに 4コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v20/panel-v20-tend-04.png)
+![おわりに 7コマ目](https://kutsushitaneko.github.io/in-database-ai-manga/assets/magical-girl-ai/v21/panel-v21-tend-04.png)
 
 <details>
 <summary>おわりにの解説をテキストで読む</summary>
@@ -1683,17 +1815,43 @@ Open Agent Specification
 
 **おわりに 2コマ目**
 
+| 魔法の世界 | 実際の技術 | 良さ |
+| --- | --- | --- |
+| 一つの図書館 | 正本の表を参照 | 写さないので最新 |
+| 魔導地図 | 地理空間情報とSQL | 種類の違う条件を一緒に |
+| 精霊を招く | DB内の埋め込みモデル | 文書を外へ出さずベクトル化 |
+| 巻物と矢が一緒に消える | 同じ表・トランザクション | 更新・取り下げを検索へ反映 |
+
+**おわりに 3コマ目**
+
+| 魔法の世界 | 実際の技術 | 良さ |
+| --- | --- | --- |
+| 結界と護符・図書館の決まり | ビュー・コンテキスト・権限 | 範囲と権限をDBで守る |
+| 判定の印 | ビューの業務判定列 | アプリもAIも同じ判定 |
+| 根拠召喚 | 範囲内の文書を検索するRAG | 最新の根拠で答える |
+| 使い魔の日誌 | DBの道具と実行記録 | 道具と記録がDBの中に |
+
+**おわりに 4コマ目**
+
+**アイ：** 図書館の守りも、一か所で考えられるんですね
+
+**神宮寺：** バックアップ・可用性・監査も、DBの仕組みでまとめて設計できる。必要な設定と運用は、きちんと決めておこう
+
+バックアップ・可用性・監査 DBの仕組みでまとめて設計
+
+**おわりに 5コマ目**
+
 設計の考え方
 
 インデータベースAI
 
 データのある場所で、AIの検索や処理を動かす
 
-**おわりに 3コマ目**
+**おわりに 6コマ目**
 
 原記事「はじめてのインデータベースAI～ ベクトル検索・RAGからAIエージェントまで～」 本編の漫画『【マンガ】はじめてのインデータベースAI～ ベクトル検索・RAGからAIエージェントまで～ （コミカライズ版）』（副題：データのそばに、AIを。）
 
-**おわりに 4コマ目**
+**おわりに 7コマ目**
 
 **アイ：** ……呼んでないですよ？
 
